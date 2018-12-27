@@ -1,0 +1,44 @@
+#loader {
+  @include position('relative', 0, 0);
+  width: 100%;
+  height: 100vh;
+
+  h1{
+    @include position(absolute, 60%, 50%);
+    transform: translate(-50%, -50%);
+    color: #d3d3d3;
+    width: 100%;
+    text-align: center;
+    font-size:calc(1em + 1.7vmax);
+    animation: opacityAnim 3s ease infinite;
+  }
+
+  #wrap{
+     @include display(row, center, center);
+     @include position(absolute, 50%, 50%);
+     transform: translate(-50%, -50%);
+     width: 50%;
+     height: 10%;
+     animation: opacityAnim 1 ease infinite;
+
+  .cube{
+    width: 80px;
+    height: 80px;
+    animation: bounce 2s ease infinite;
+    @include media($phone){
+      width: 50px;
+      height: 50px;
+    }
+  }
+
+  #cube1{
+    animation-delay: .2s;
+  }
+  #cube2{
+    animation-delay: .4s;
+  }
+  #cube3{
+    animation-delay: .6s;
+  }
+ }
+}

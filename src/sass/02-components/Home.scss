@@ -1,0 +1,154 @@
+#home{
+  @include position(relative, 0, 0);
+  height: 120vh;
+  width: 100%;
+  @include media($tab){
+    height: 100vh;
+  }
+
+  canvas{
+    width:100%;
+    height:100%;
+    padding:0;
+    margin:0;
+    cursor:default;
+  }
+
+  h1{
+    @include position(absolute, 45%, 0%);
+    transform: translateY(-50%) ;
+    font-size:calc(4em + 2.7vmax);
+    font-weight: 800;
+    font-family: 'Quantico';
+    color: #050505;
+    border: none;
+    outline: none;
+    opacity: 1;
+    width: 100vw;
+    line-height: 1.2;
+    box-shadow: 1500px 0px 0px inset #050505;
+    text-align: center !important;
+    text-shadow: none;
+     @include media($phone){
+      font-size: 2.8em;
+    }
+    @include media($tab){
+      top: 54%
+    }
+  }
+
+  p{
+    @include position(absolute, 64%, 50%);
+    transform: translate(-50%, -50%);
+    font-size: $md;
+    color:#050505;
+    text-align: center;
+    text-transform: uppercase;
+    box-shadow: 0px -400px 0px inset #050505;
+    @include media($tab){
+      top: 67%
+    }
+  }
+
+  >button{
+       @include position(absolute, 60%, 0%);
+        cursor: pointer;
+        scale: 1;
+        width: 220px;
+        height: auto;
+        margin: 2%;
+        padding: 2px 7px;
+        font-size: $md;
+        font-weight: 400;
+        color: #444;
+        border: none;
+        border-radius: 5px;
+        background: #111;
+        text-align: center;
+        letter-spacing: 0.1px;
+        text-transform: uppercase;
+        transition: all 150ms;
+       @include media($phone-tab){
+          top: 3%;
+          width: 100px;
+          background: none;
+          color: white;
+    }
+    &:hover{
+      background: white;
+      color: #0a0a0a;
+      border: none;
+    }
+  }
+
+  #project-btn{
+    left: 10% !important;
+    transform: translate(-50%, -50%);
+    padding-left: 90px;
+    box-shadow: -30px -10px #070707;
+     &:hover{
+        box-shadow: -30px -10px #d3d3d3;
+    }
+     @include media($phone-tab){
+       left: 15%;
+       padding-left:0px;
+       box-shadow: none;
+       animation: opacityAnim 3s ease infinite;
+    }
+  }
+
+  #about-btn{
+     left: 85% !important;
+     padding-right: 90px;
+     transform: translate(-50%, -50%);
+     box-shadow: 30px -10px #070707;
+      &:hover{
+        box-shadow: 30px -10px #d3d3d3;
+    }
+     @include media($phone-tab){
+       padding-right: 0px;
+       left: 85%;
+       box-shadow: none;
+       animation: opacityAnim 3s ease infinite;
+    }
+  }
+
+  .line{
+      @include position(absolute, 67%, 0%);
+      display: inline-block;
+      width: 200px;
+      height: 4px;
+      border: none;
+      box-shadow: 0px 1px 4px inset #111;
+     @include media($phone-tab){
+       display: none;
+    }
+
+     .in-line{
+       width: 10px;
+       height: 2px;
+       box-shadow: 0px 2px inset grey;
+     }
+
+    .one{
+      margin-left: 3%;
+    }
+    .two{
+      margin-left: 80%;
+     }
+   }
+  #line-0{
+    top: 62%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+  }
+  #line-1{
+     left: 12%;
+    transform: translate(-50%, -50%)
+  }
+
+  #line-2{
+     left: 87%;
+    transform: translate(-50%, -50%)
+  }
+}

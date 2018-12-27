@@ -1,0 +1,23 @@
+@mixin media($query){
+  @media only screen and #{$query}{
+    @content;
+ }
+}
+//-------------------------------------------------
+
+
+//mixin for position---------------
+@mixin position($type, $top, $left){
+  position: $type;
+  top: $top;
+  left: $left;
+}
+
+
+//mixin for display flex---------------
+@mixin display($direction, $justify, $align){
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align;
+}

@@ -1,0 +1,148 @@
+#about{
+  @include position(relative, 0, 0);
+  height: 120vh;
+  width: 100%;
+  text-align: center;
+  font-size: calc(1em + 2.7vmax);
+  @include media($tab){
+    height: 90vh;
+  }
+
+
+  h3{
+     font-size: $md;
+     color: #CA7564;
+     margin-top: 10% !important;
+     padding: 0 !important;
+     @include media($tab){
+        margin-top: 12%;
+      }
+  }
+
+  h1{
+    margin-top: -1% !important;
+    padding: 0 !important;
+    font-weight: 800;
+    color:  #d9d9d9;
+    font-family: 'Quantico';
+  }
+
+  hr{
+    margin: 2% auto;
+    margin-bottom: 1%;
+    border: none;
+    height: 1px;
+    width: 20%;
+    box-shadow: 0px 1px grey;
+    @include media($phone){
+      width: 40%;
+    }
+  }
+
+  #head{
+    color: white;
+    margin: 2% auto !important;
+    margin-bottom: 0;
+  }
+
+   p{
+     margin: -3% auto;
+     margin-bottom: 1%;
+     padding: 0 4%;
+     width: 50%;
+     font-size: $md;
+     color: grey;
+     @include media($phone-tab){
+       width: 90%;
+     }
+      @include media($tab){
+        margin: 1% auto;
+        font-size: 0.5em;
+      }
+
+    >span{
+      color: #CA7564;
+      font-weight: 800;
+    }
+
+  }
+
+  .skills{
+       margin-top: -1%;
+       color: #CA7564 !important;
+       font-weight: 800 !important;
+     }
+
+    .icon{
+      position: absolute;
+      color: #FFF5F1;
+      opacity: 0.3;
+      transform: scale(0.2);
+      font-size: calc(28px + 2vmax);
+      @include media($phone){
+        font-size: 24px;
+        opacity: 0.2!important;
+      }
+      @include media($medium){
+        opacity: 0.2!important;
+      }
+      border-radius: 50%;
+      z-index: -1;
+    }
+
+
+  .i-1{
+    @include position(absolute, 5%, 25%);
+  }
+  .i-2{
+    @include position(absolute, 30%, 12%);
+  }
+  .i-3{
+    @include position(absolute, 60%, 25%);
+    @include media($medium){
+      top: 50%;
+    }
+  }
+  .i-4{
+    @include position(absolute, 55%, 4%);
+    @include media($medium){
+      top: 45%;
+    }
+  }
+  .i-5{
+    @include position(absolute, 5%, 4%);
+  }
+  .i-6{
+    top: 5%;
+    right: 25%;
+  }
+  .i-7{
+     top: 30%;
+     right: 12%;
+  }
+  .i-8{
+    top: 60%;
+    right: 25%;
+    @include media($medium){
+      top: 50%;
+    }
+  }
+  .i-9{
+    top: 55%;
+    right: 4%;
+    @include media($medium){
+      top: 45%;
+    }
+  }
+  .i-10{
+    top: 5%;
+    right: 4%;
+  }
+  .i-11{
+    top: 58%;
+    right: 47%;
+    @include media($medium){
+      top: 48%;
+    }
+  }
+}

@@ -1,0 +1,15 @@
+body{
+  background: black;
+  height: 100%;
+  font-family: 'Karla';
+  overflow-x: hidden;
+  cursor: default;
+}
+
+::-webkit-scrollbar { //hide scrollbar for chrome and safari
+    display: none;
+}
+
+#root{
+  display: none; //while loading
+}

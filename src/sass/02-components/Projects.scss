@@ -1,0 +1,234 @@
+#projects{
+  @include position(relative, 0%, 0%);
+  padding:0;
+  margin: 0;
+  width: 100%;
+  height: 120vh;
+  font-size: calc(1em + 2.7vmax);
+  text-align: center;
+  transition: visibility 5s ease;
+  @include media($tab){
+    height: 100vh;
+  }
+
+  h3{
+   @include position(absolute, -4%, 50%);
+    transform: translateX(-50%);
+    font-size: $md;
+    color: #CA7564;
+    padding: 10px;
+    @include media($phone-tab){
+      top: -6%;
+    }
+  }
+  h1{
+    margin: 1%;
+    padding: 1%;
+    color:  #d9d9d9;
+    font-weight: 800;
+    font-family: 'Quantico';
+    line-height: 1;
+  }
+
+  .small-icon{
+     @include display(row, space-between, center);
+     margin: 0 1%;
+
+    .icon-s{
+       visibility: hidden;
+       color: grey;
+       font-size: calc(0.5em + 2vmax);
+       @include media($phone-tab){
+         visibility: visible;
+         cursor: pointer;
+      }
+    }
+  }
+
+  p{
+    padding: 0 5%;
+    font-size: $md;
+    color: grey;
+
+    .highlight{
+      color: #CA7564;
+    }
+  }
+
+
+
+  .slider{
+    @include display(row, space-between, center);
+    margin: -2% 5%;
+    margin-bottom: 0;
+    @include media($phone-tab){
+       display: block;
+        margin: 2% 0;
+      }
+     @include media($tab){
+        margin: 7% 0!important;
+      }
+    .arrow {
+      width: calc(6.5rem + 3vmax);
+      height: calc(6.5rem + 3vmax);
+      border-radius: 50%;
+      border: 2px dotted #1a1a1a;
+      transition: all 100ms ease;
+      transition-delay: 0.5s;
+      cursor: pointer;
+      @include media($phone-tab){
+        display: none;
+      }
+      .outer-circle{
+        margin: 5% auto;
+        width: 85%;
+        height: 85%;
+        border-radius: 50%;
+        border: 2px dashed grey;
+        transition-delay: .2s;
+        .inner-circle{
+          margin: 10% auto;
+          width: 80%;
+          height: 80%;
+          border-radius: 50%;
+          border: 2px dotted #1a1a1a;
+          @include display(row, center, center);
+          .icon{
+            color: grey;
+            font-size: calc(0.3em + 2vmax);
+            @include media($phone-tab){
+             display: none;
+
+            }
+          }
+        }
+      }
+      &:hover{
+        box-shadow: 0px 0px 7px 5px inset white, 0px 0px 50px #CA7564;
+        border-color: transparent;
+        .outer-circle{
+          border-color: transparent;
+        }
+        .inner-circle{
+          border-color: transparent;
+          .icon{
+            color:white;
+          }
+        }
+      }
+    }
+
+
+  .inner{
+    @include position(relative, 0, 0);
+    border-radius: 0%;
+    border: none;
+    width: 640px;
+    height: 350px;
+    overflow: visible;
+    background: transparent;
+     -webkit-mask-image: radial-gradient(black 30%, rgba(0, 0, 0, 0.8) , rgba(255, 255, 255, 0.1) );
+    -webkit-mask-size: cover;
+    mask-image: radial-gradient(black 30%, rgba(0, 0, 0, 0.8) , rgba(255, 255, 255, 0.1) );
+    mask-size: cover;
+    mask-position: center;
+    mask-type: alpha;
+    @include media($phone-tab){
+        width: 90vw;
+        height: auto;
+        margin: 0 auto;
+      }
+    img{
+        border-radius: 5px;
+        border: none;
+        width: 100%;
+        height: 100%;
+        box-shadow: none;
+     }
+
+    .mask{
+      @include position(absolute, 0, 50%);
+      transform: translateX(-50%);
+      width: 100%;
+      height: 100%;
+      box-shadow: 0px 0px 0px inset #CA7564;
+      z-index: 999;
+    }
+
+    .graph{
+      position: absolute;
+      bottom: -1px;
+      left: 0px;
+      width: 102%;
+      height: 45%;
+      background: linear-gradient(rgba(0,0,0,0.9), #000 );
+      z-index: 999;
+      @include display(column, flex-start, flex-start);
+
+      .bar{
+        width:90%;
+        height: 10%;
+        @include display(row, flex-start, center);
+        border-bottom: 0.2px solid black;
+        z-index: 999;
+        color: white;
+        margin: 2% 3%;
+
+        p{
+          font-weight: 500;
+          text-transform: uppercase;
+        }
+
+        .shadow{
+          height: 5px;
+          width: 450px;
+          background: black;
+          border-width: 0.2px 0px;
+          margin-left: 7%;
+        }
+      }
+    }
+  }
+ }
+
+  #buttons{
+    cursor: pointer;
+    margin-top: -2%;
+    @include media($phone-tab){
+       margin-top:0;
+    }
+     @include media($tab){
+        margin-top: 2%;
+      }
+    @include display(row, center, center);
+    a{
+      margin: 0 2%;
+    }
+    .button{
+        width: 100%;
+        height: auto;
+        padding: 12px 24px;
+        font-size: $md;
+        color: white;
+        cursor: pointer;
+        border: 1px solid #CA7564;
+        margin: 2%;
+        box-sizing: border-box;
+        background: transparent;
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: 800;
+        box-shadow: none;
+        border-radius: 5px;
+        transition: all 150ms;
+      @include media($phone){
+        padding: 12px 12px;
+      }
+      &:hover{
+          background: white;
+          color: black;
+          box-shadow: 0px 5px 25px #CA7564;
+        }
+    }
+  }
+}

@@ -1,0 +1,28 @@
+@charset 'UTF-8';
+
+
+
+// 0. Settings – contains root variables
+@import
+  '00-settings/_vars',
+  '00-settings/_mixins';
+
+
+  // 1. Generic – reset and/or normalize styles
+  @import
+    '01-generic/_base';
+
+
+// 2. Components – specific UI components. This is where majority of our work takes place and our UI components are often composed of Objects and Components
+
+@import
+    '02-components/Loader',
+    '02-components/Home',
+    '02-components/Projects',
+    '02-components/About',
+    '02-components/Contact';
+
+
+  // 3. Utilities– utilities and helper classes with ability to override anything which goes before in the triangle, eg. hide helper class
+@import
+    '03-utilities/_animation';

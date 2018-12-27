@@ -1,0 +1,38 @@
+.anim{
+  transform: translateY(150px);
+}
+
+.come-in {
+  animation: come-in 1s ease-out forwards;
+}
+
+
+@keyframes opacityAnim{
+  0%{
+    opacity: .5;
+  }
+  50%{
+    opacity: .25;
+  }
+  100%{
+    opacity: .5;
+  }
+}
+
+
+@keyframes bounce{
+  0%{
+    transform: translateY(0);
+  }
+  20%{
+    transform: translateY(-50px);
+  }
+  100%{
+    transform: translateY(0px);
+  }
+}
+
+@keyframes come-in {
+  to { transform: translateY(0);}
+}
+//-------------
