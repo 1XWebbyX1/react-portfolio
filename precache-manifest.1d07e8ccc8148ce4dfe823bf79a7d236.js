@@ -72,7 +72,7 @@ self.__precacheManifest = [
     "url": "/react-portfolio/static/js/runtime~main.f2f8afa2.js"
   },
   {
-    "revision": "43a8cd13418d7d7bcf23495d48581075",
+    "revision": "4695b8ed48a74bba5c2a42754afb2b57",
     "url": "/react-portfolio/index.html"
   }
 ];
