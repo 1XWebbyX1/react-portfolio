@@ -1,10 +1,8 @@
 import React from 'react'
 import asyncComponent from '../asyncComponent/async'
-//import Arrow from './Arrow'
-//import Graph from './Graph'
 import $ from 'jquery'
-import src from './fallback'
-import projects from './projectsData.js'
+import src from './dataObjects/fallback'
+import projects from './dataObjects/projectsData.js'
 import {TimelineMax, Elastic} from "gsap/TweenMax";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCodepen, faGithub} from '@fortawesome/free-brands-svg-icons'
@@ -18,6 +16,7 @@ const Arrow = asyncComponent(() =>
 const Graph = asyncComponent(() =>
            import('./Graph').then(module => module.default)
         );
+
 class Article extends React.Component{
   constructor(props){
     super(props);

@@ -8,6 +8,8 @@ const Lines = asyncComponent(() =>
     	    import('./Lines').then(module => module.default)
     	);
 
+
+
 class Home extends React.Component{
 
   constructor(props){

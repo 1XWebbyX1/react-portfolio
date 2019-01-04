@@ -1,6 +1,7 @@
 body{
   background: black;
   height: 100%;
+  width: 100vw!important;
   font-family: 'Karla';
   overflow-x: hidden;
   cursor: default;
@@ -11,5 +12,5 @@ body{
 }
 
 #root{
-  display: none; //while loading
+  display: none;//while loading
 }

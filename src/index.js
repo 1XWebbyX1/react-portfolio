@@ -12,7 +12,7 @@ var THREE = THREELib();
 ReactDOM.render(<App />, document.getElementById('root'));
 
 
-$(document).ready(function(){
+
 
   setTimeout(function(){
       //display app after load--------
@@ -42,8 +42,6 @@ $(document).ready(function(){
    }, function() {
       $('#line-2').css('box-shadow', '0px 1px 4px inset #111');
    });
-
-
 
     //GSAP for animations_____________________________________________________________________________________
 
@@ -206,7 +204,6 @@ var init = function() {
 
 
 	drawTheMap();
-    window.addEventListener('resize', onResize, false);
 
 };
 
@@ -219,7 +216,7 @@ var onResize = function(){
     camera.right   = ww / 2;
     camera.top     = wh / 2;
     camera.bottom  = wh / - 2;
-    camera.updateProjectionMatrix();
+    //camera.updateProjectionMatrix();
 };
 
 
@@ -243,5 +240,3 @@ image.onload = init;
 image.src = imgData;
 
   }, 8000);
-
-});
