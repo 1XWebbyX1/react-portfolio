@@ -92,13 +92,13 @@
 
 
   .i-1{
-    @include position(absolute, 5%, 25%);
+    @include position(absolute, 5%, 20%);
   }
   .i-2{
     @include position(absolute, 30%, 12%);
   }
   .i-3{
-    @include position(absolute, 60%, 25%);
+    @include position(absolute, 70%, 20%);
     @include media($medium){
       top: 50%;
     }
@@ -114,15 +114,15 @@
   }
   .i-6{
     top: 5%;
-    right: 25%;
+    right: 20%;
   }
   .i-7{
      top: 30%;
      right: 12%;
   }
   .i-8{
-    top: 60%;
-    right: 25%;
+    top: 70%;
+    right: 20%;
     @include media($medium){
       top: 50%;
     }
@@ -139,8 +139,8 @@
     right: 4%;
   }
   .i-11{
-    top: 58%;
-    right: 47%;
+    top: 68%;
+    right: 48%;
     @include media($medium){
       top: 48%;
     }

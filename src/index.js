@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
-import img from './data/images/main-img-data'
+import img from './images/main-img-data'
 import $ from 'jquery'
 import {TweenMax, TimelineMax, Back, Bounce} from "gsap/TweenMax";
 //import * as serviceWorker from './serviceWorker';

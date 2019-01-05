@@ -3,7 +3,6 @@ import icons from './icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 
-
 class About extends React.Component{
   render(){
     // loop through icons arr to create i elements
@@ -20,7 +19,8 @@ class About extends React.Component{
         <hr class='anim'/>
          <h3 class='anim' id='head'>SKILLS AND ABILITIES</h3>
 
-        <p class='anim skills'>HTML5, CSS3, jQuery, Javascript, React, Sass, Bootstrap, Redux, Java,  Git, Git Hub, Three, GSAP, Command line Experience,  Adobe Illustrator and Photoshop, Working with Browser developer tools for debugging, optimized Images for web, creating Responsive and Cross Browser Compatible designs, FontAwesome, Devicon, Atom.</p>
+        <p class='anim skills'>HTML5, CSS3, Javascript <br /> JS Framework -- React, State Container -- Redux <br />JS libraries -- jQuery, Three.js, GSAP <br /> CSS Framework -- Bootstrap, CSS Preprocessor -- Sass <br />JS Task Runners -- gulp, npm scripts,  Package Manager -- npm,  Module Loader/bundler -- webpack <br /> Version Control System -- Git, Git Hub <br />
+        Knowledge of ES6, responsive design, cross browser compatible designs, good web performance including SEO principles and Acessibility, working with command line <br />Tools -- Adobe Illustrator and Photoshop, Atom, working with Browser developer tools for debugging, optimized Images for web <br /> More -- Java, FontAwesome, Devicon .</p>
 
          <div class='container'>
            {arr}
