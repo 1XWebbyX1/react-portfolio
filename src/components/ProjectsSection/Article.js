@@ -1,12 +1,13 @@
 import React from 'react'
 import asyncComponent from '../asyncComponent/async'
 import $ from 'jquery'
-import src from './dataObjects/fallback'
-import projects from './dataObjects/projectsData.js'
+import src from './data/fallback'
+import markdown from './data/images/markdown.png'
+import projects from './data/projectsData.js'
 import {TimelineMax, Elastic} from "gsap/TweenMax";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCodepen, faGithub} from '@fortawesome/free-brands-svg-icons'
-import { faArrowCircleLeft, faArrowCircleRight} from '@fortawesome/free-solid-svg-icons'
+import {faGithub} from '@fortawesome/free-brands-svg-icons'
+import { faLaptopCode,faArrowCircleLeft, faArrowCircleRight} from '@fortawesome/free-solid-svg-icons'
 
 
 const Arrow = asyncComponent(() =>
@@ -22,10 +23,9 @@ class Article extends React.Component{
     super(props);
     this.state = {
       index: 0,
-      arr: src,
       project: function() {return projects[this.index].project},
       description: function() {return projects[this.index].description},
-      src: function() {return this.arr[this.index]},
+      src: function() {return src[this.index]},
       graph: function() {return projects[this.index].graph},
       codepen: function() {return projects[this.index].codepen},
       github: function() {return projects[this.index].github}
@@ -66,7 +66,13 @@ class Article extends React.Component{
          this.setState({
            index: this.state.index + 1
        });
-     }
+       setTimeout(function(){
+         import('' + this.state.src())
+         .then(src => {
+           $('#project').attr('src', src.default);
+         })
+       }.bind(this), 200);
+    }
  }
 
   //on prev button click
@@ -76,7 +82,13 @@ class Article extends React.Component{
          this.setState({
          index: this.state.index - 1
        });
-      }
+       setTimeout(function(){
+         import('' + this.state.src())
+         .then(src => {
+           $('#project').attr('src', src.default);
+         })
+       }.bind(this), 200);
+    }
   }
 
   //update button opacity
@@ -110,15 +122,15 @@ class Article extends React.Component{
           <Arrow id='left' direction={faArrowCircleLeft} onClick={this.handlePrev}/>
         <figure class='inner'>
           <div class='mask' />
-            <img src={this.state.src()} alt='project-img'/>
+            <img id='project' src={markdown} alt='project-img'/>
             <Graph src={this.state.graph()}/>
         </figure>
            <Arrow id='right' direction={faArrowCircleRight} onClick={this.handleNext}/>
         </div>
 
         <div id='buttons' >
-            <a href={this.state.codepen()} target='_blank' rel="noopener noreferrer"><button class='code-pen button anim-butt '>View on CodePen <FontAwesomeIcon icon={faCodepen}/></button></a>
-            <a href={this.state.github()} target='_blank' rel="noopener noreferrer"><button class='git-hub button anim-butt'>View on GitHub <FontAwesomeIcon icon={faGithub} /></button></a>
+            <a href={this.state.codepen()} target='_blank' rel="noopener noreferrer"><button class='code-pen button anim-butt '>View the Code <FontAwesomeIcon icon={faLaptopCode}/></button></a>
+            <a href={this.state.github()} target='_blank' rel="noopener noreferrer"><button class='git-hub button anim-butt'>View the Demo <FontAwesomeIcon icon={faGithub} /></button></a>
         </div>
       </div>
     )
