@@ -98,7 +98,7 @@
     @include position(absolute, 30%, 12%);
   }
   .i-3{
-    @include position(absolute, 70%, 20%);
+    @include position(absolute, 65%, 20%);
     @include media($medium){
       top: 50%;
     }
@@ -121,7 +121,7 @@
      right: 12%;
   }
   .i-8{
-    top: 70%;
+    top: 65%;
     right: 20%;
     @include media($medium){
       top: 50%;
@@ -139,7 +139,7 @@
     right: 4%;
   }
   .i-11{
-    top: 68%;
+    top: 63%;
     right: 48%;
     @include media($medium){
       top: 48%;

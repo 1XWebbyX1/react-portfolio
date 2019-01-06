@@ -15,12 +15,12 @@ class About extends React.Component{
          <h3 class='anim'>Introduction</h3>
          <h1 class='anim'>About Me</h1>
 
-        <p class='anim'> A passionate front end developer, a self learner, who aims to bring perfection in design and efficiency within each project taken. I target a great user experience through a creative visual design in my work.<br />  My mantra for work would be  'Learn, Use, Research and Improve'.</p>
+        <p class='anim'> A passionate front end developer, a self learner, who aims to bring perfection in design and efficiency within each project taken. I target a great user experience through a creative visual design and high web performance in my work. I am currently looking for a challenging environment to enhance my skills.<br />  My mantra for work would be  'Learn, Use, Research and Improve'.</p>
         <hr class='anim'/>
          <h3 class='anim' id='head'>SKILLS AND ABILITIES</h3>
 
-        <p class='anim skills'>HTML5, CSS3, Javascript <br /> JS Framework -- React, State Container -- Redux <br />JS libraries -- jQuery, Three.js, GSAP <br /> CSS Framework -- Bootstrap, CSS Preprocessor -- Sass <br />JS Task Runners -- gulp, npm scripts,  Package Manager -- npm,  Module Loader/bundler -- webpack <br /> Version Control System -- Git, Git Hub <br />
-        Knowledge of ES6, responsive design, cross browser compatible designs, good web performance including SEO principles and Acessibility, working with command line <br />Tools -- Adobe Illustrator and Photoshop, Atom, working with Browser developer tools for debugging, optimized Images for web <br /> More -- Java, FontAwesome, Devicon .</p>
+        <p class='anim skills'>HTML5, CSS3, Javascript, React, Redux, Bootstrap, Sass <br />jQuery, Three.js, GSAP <br /> gulp, npm scripts, npm, webpack <br /> Git, Git Hub <br />
+        Knowledge of ES6, responsive design, cross browser compatiblity, good web performance including SEO principles and Acessibility<br /> working with command line <br /> Adobe Illustrator and Photoshop, Atom, working with Browser developer tools for debugging, optimized Images for web <br /> Java, FontAwesome, Devicon .</p>
 
          <div class='container'>
            {arr}

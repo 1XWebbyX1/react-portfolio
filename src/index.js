@@ -206,18 +206,7 @@ var init = function() {
 	drawTheMap();
 
 };
-
-
-var onResize = function(){
-	ww = window.innerWidth;
-	wh = window.innerHeight;
-	renderer.setSize(ww, wh);
-    camera.left    = ww / - 2;
-    camera.right   = ww / 2;
-    camera.top     = wh / 2;
-    camera.bottom  = wh / - 2;
-    //camera.updateProjectionMatrix();
-};
+ 
 
 
 var render = function(a) {

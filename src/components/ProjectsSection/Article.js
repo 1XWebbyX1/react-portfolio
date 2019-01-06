@@ -114,7 +114,7 @@ class Article extends React.Component{
 
         <div class='small-icon'>
          <div class='holder'  onClick={this.handlePrev}><FontAwesomeIcon className="icon-s" icon={faArrowCircleLeft}/></div>
-            <p class='anim'>A {this.state.project()} created by fulfilling user stories at freeCodeCamp. The Project used <span class='highlight'>{this.state.description()}</span>. The design is fully responsive and cross-browser compatible.</p>
+            <p class='anim'>A {this.state.project()} created using <span class='highlight'>{this.state.description()}</span>. The design is responsive and cross-browser compatible.</p>
           <div class='holder'  onClick={this.handleNext}><FontAwesomeIcon className="icon-s"  onClick={this.handleNext} icon={faArrowCircleRight}/></div>
         </div>
 
