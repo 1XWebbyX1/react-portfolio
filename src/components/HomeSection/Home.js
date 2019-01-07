@@ -20,13 +20,13 @@ class Home extends React.Component{
 
  scrollToProjects(){
    $('html, body').animate({
-                    scrollTop: $('#projects').offset().top
+                    scrollTop: $('#projects').offset().top - 100
                 }, 500);
  }
 
   scrollToAbout(){
    $('html, body').animate({
-                    scrollTop: $('#about').offset().top
+                    scrollTop: $('#about').offset().top - 100
                 }, 500);
  }
 
