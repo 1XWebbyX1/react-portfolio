@@ -27,7 +27,7 @@ class Article extends React.Component{
       description: function() {return projects[this.index].description},
       src: function() {return src[this.index]},
       graph: function() {return projects[this.index].graph},
-      codepen: function() {return projects[this.index].codepen},
+      code: function() {return projects[this.index].code},
       github: function() {return projects[this.index].github}
     }
      this.handleNext = this.handleNext.bind(this);
@@ -61,7 +61,7 @@ class Article extends React.Component{
 
   //on next button click
   handleNext(){
-    if(this.state.index <=8 ){ // if not last project
+    if(this.state.index <=7 ){ // if not last project
        this.animateChange();
          this.setState({
            index: this.state.index + 1
@@ -97,7 +97,7 @@ class Article extends React.Component{
       $('.fa-arrow-circle-left').css('opacity', '0.1');
       $('.fa-arrow-circle-right').css('opacity', '1');
     }
-    else if(this.state.index > 8){
+    else if(this.state.index > 7){
        $('.fa-arrow-circle-left').css('opacity', '1');
        $('.fa-arrow-circle-right').css('opacity', '0.1');
     }else{
@@ -114,7 +114,7 @@ class Article extends React.Component{
 
         <div class='small-icon'>
          <div class='holder'  onClick={this.handlePrev}><FontAwesomeIcon className="icon-s" icon={faArrowCircleLeft}/></div>
-            <p class='anim'>A {this.state.project()} created using <span class='highlight'>{this.state.description()}</span>. The design is responsive and cross-browser compatible.</p>
+            <p class='anim'>A {this.state.project()} designed and coded by following an iterative approach. The Project used <span class='highlight'>{this.state.description()}</span>. The design is responsive and cross-browser compatible.</p>
           <div class='holder'  onClick={this.handleNext}><FontAwesomeIcon className="icon-s"  onClick={this.handleNext} icon={faArrowCircleRight}/></div>
         </div>
 
@@ -129,7 +129,7 @@ class Article extends React.Component{
         </div>
 
         <div id='buttons' >
-            <a href={this.state.codepen()} target='_blank' rel="noopener noreferrer"><button class='code-pen button anim-butt '>View the Code <FontAwesomeIcon icon={faLaptopCode}/></button></a>
+            <a href={this.state.code()} target='_blank' rel="noopener noreferrer"><button class='code-pen button anim-butt '>View the Code <FontAwesomeIcon icon={faLaptopCode}/></button></a>
             <a href={this.state.github()} target='_blank' rel="noopener noreferrer"><button class='git-hub button anim-butt'>View the Demo <FontAwesomeIcon icon={faGithub} /></button></a>
         </div>
       </div>

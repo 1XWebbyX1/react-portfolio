@@ -27,7 +27,7 @@
 
   .wrapper{
     @include display(row, center, center);
-    margin-top: calc(10% + 7vmax);
+    margin-top: calc(12% + 7vmax);
     @include media($tab){
       margin-top: 25%;
     }
@@ -129,7 +129,7 @@
      content: "";
      width: 100%;
      height: 110%;
-     top: -1%;
+     top: 0%;
      left: 0;
      right: 0;
      position: absolute;

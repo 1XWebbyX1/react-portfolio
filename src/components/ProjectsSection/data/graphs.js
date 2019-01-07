@@ -17,8 +17,7 @@ var graphs = [
 
   [{color: '#e68a00', name: 'React', width: '60px'},
   {color: 'white', name: 'jQuery', width: '100px'},
-  {color: '#330066', name: 'Sass', width: '150px'},
-  {color: '#608000', name: 'AJAX', width: '50px'}],
+  {color: '#330066', name: 'Sass', width: '150px'}],
 
   [{color: '#e68a00', name: 'React', width: '200px'},
   {color: 'white', name: 'jQuery', width: '30px'},
@@ -36,9 +35,7 @@ var graphs = [
   [{color: '#e68a00', name: 'React', width: '300px'},
   {color: 'white', name: 'jQuery', width: '50px'},
   {color: '#330066', name: 'Sass', width: '140px'},
-  {color: '#608000', name: 'Redux', width: '80px'}],
-
-  [{color: '#e68a00', name: 'Sass', width: '500px'}]
+  {color: '#608000', name: 'Redux', width: '80px'}]
 
 ]
 

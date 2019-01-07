@@ -46,7 +46,7 @@
   }
 
    p{
-     margin: -3% auto;
+     margin: -4% auto;
      margin-bottom: 1%;
      padding: 0 4%;
      width: 50%;
@@ -69,6 +69,7 @@
 
   .skills{
        margin-top: -1%;
+        transform: rotateX(30deg) rotateY(18deg) rotateZ(-24deg) translate(100px, -20px);
        color: #CA7564 !important;
        font-weight: 800 !important;
      }
@@ -77,8 +78,9 @@
       position: absolute;
       color: #FFF5F1;
       opacity: 0.3;
-      transform: scale(0.2);
-      font-size: calc(28px + 2vmax);
+      transform: scale(0.2) rotateX(30deg) rotateY(18deg) rotateZ(-24deg) translate(100px, -20px);
+      font-size: calc(13px + 2vmax);
+      box-shadow: -70px 122px 170px 0 #FFF5F1;
       @include media($phone){
         font-size: 24px;
         opacity: 0.2!important;

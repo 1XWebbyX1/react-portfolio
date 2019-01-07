@@ -102,7 +102,7 @@ var latestKnownScrollPos = 0,
    if(element_top_position <= window_bottom_position && element_top_position >= currentScrollY){
      $($element).addClass('come-in'); //if visible in viewport apply css class for animation
      if($element.attr('id') === 'about'){ // extra animation for icons in about section
-       TweenMax.staggerFromTo($('#about .icon'), 1, {scale: 0.2, x: 0}, {scale: 1, x: 20}, 0.2);
+       TweenMax.staggerFromTo($('#about .icon'), 1, {scale: 0.2, x: 0}, {scale: 1, x: 20});
      }
     }
    });
@@ -206,7 +206,7 @@ var init = function() {
 	drawTheMap();
 
 };
- 
+
 
 
 var render = function(a) {
