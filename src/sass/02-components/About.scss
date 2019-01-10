@@ -3,7 +3,7 @@
   height: 120vh;
   width: 100%;
   text-align: center;
-  font-size: calc(1em + 2.7vmax);
+  font-size: calc(1.2em + 2.5vw);
   @include media($tab){
     height: 90vh;
   }
@@ -12,7 +12,7 @@
   h3{
      font-size: $md;
      color: #CA7564;
-     margin-top: 10% !important;
+     margin-top: 10%;
      padding: 0 !important;
      @include media($tab){
         margin-top: 12%;
@@ -27,124 +27,157 @@
     font-family: 'Quantico';
   }
 
-  hr{
-    margin: 2% auto;
-    margin-bottom: 1%;
-    border: none;
-    height: 1px;
-    width: 20%;
-    box-shadow: 0px 1px grey;
-    @include media($phone){
-      width: 40%;
+  .information{
+    height: auto;
+    display: flex;
+    margin: -4% 2%;
+    justify-content: space-between;
+    padding: 0 2%;
+
+    .widget-icons{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+
+      #title-circle{
+        width: 200px;
+        height: 200px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        border: solid 1px #d9d9d9;
+        animation: bounce 8s ease infinite;
+        box-shadow: inset 0px 5px 25px #CA7564, 0px 5px 25px #CA7564 ;
+        @include media($phone-tab){
+          display: none;
+       }
+        #about-svg{
+          display: block;
+        }
+
+        #skills-svg{
+          display: none;
+        }
+      }
+
+      .line{
+          width: 200px;
+          height: 10px;
+        //  margin: 8% 3%;
+          border: none;
+          box-shadow: 0px 1px 10px inset #111;
+         @include media($phone-tab){
+           display: none;
+        }
+
+         .in-line{
+           width: 10px;
+           height: 2px;
+           box-shadow: 0px 2px inset grey;
+         }
+
+        .one{
+          margin-left: 3%;
+         }
+        .two{
+          margin-left: 80%;
+         }
+       }
     }
-  }
 
-  #head{
-    color: white;
-    margin: 2% auto !important;
-    margin-bottom: 0;
-  }
 
-   p{
-     margin: -4% auto;
-     margin-bottom: 1%;
-     padding: 0 4%;
-     width: 50%;
-     font-size: $md;
-     color: grey;
-     @include media($phone-tab){
-       width: 90%;
+
+    #display-card{
+      background: #0a0a0a;
+      height: auto;
+      width: 80%;
+      @include media($phone-tab){
+        width: 100%;
      }
-      @include media($tab){
-        margin: 1% auto;
-        font-size: 0.5em;
-      }
 
-    >span{
-      color: #CA7564;
-      font-weight: 800;
-    }
+      .content{
+        text-align: left;
+        padding: 2%;
 
+        h3{
+          margin-top: 0;
+        }
+
+        #intro{
+          display: block;
+          p{
+            font-size: $md;
+            color: #d3d3d3;
+          }
+        }
+
+        #skills{
+          display: none;
+
+          .row{
+            display: flex;
+          }
+
+          .card{
+            width: auto;
+            height: auto;
+            padding: 2px 10px;
+            margin: 0 1%;
+            border: 0.5px solid #d3d3d3;
+
+            h3{
+              font-size: calc(0.24em + 0.4vw);
+              color: white;
+            }
+
+            p{
+              font-size: calc(0.24em + 0.4vw);
+              color: #d3d3d3;
+            }
+
+            hr{
+              margin: 2% auto;
+              margin-bottom: 1%;
+              border: none;
+              height: 1px;
+              width: 100%;
+              box-shadow: 0px 1px #CA7564;
+              @include media($phone){
+              width: 40%;
+           }
+        }
+          }
+        }
+
+         .button{
+             width: 100%;
+             height: auto;
+             padding: 12px 24px;
+             font-size: $md;
+             color: white;
+             cursor: pointer;
+             border: 1px solid #CA7564;
+             box-sizing: border-box;
+             background: transparent;
+             text-align: center;
+             text-transform: uppercase;
+             font-weight: 800;
+             box-shadow: none;
+             border-radius: 5px;
+             transition: all 150ms;
+           @include media($phone){
+             padding: 12px 12px;
+           }
+           &:hover{
+               background: white;
+               color: black;
+               box-shadow: 0px 5px 25px #CA7564;
+          }
+       }
+    }
   }
 
-  .skills{
-       margin-top: -1%;
-        transform: rotateX(30deg) rotateY(18deg) rotateZ(-24deg) translate(100px, -20px);
-       color: #CA7564 !important;
-       font-weight: 800 !important;
-     }
+}
 
-    .icon{
-      position: absolute;
-      color: #FFF5F1;
-      opacity: 0.3;
-      transform: scale(0.2) rotateX(30deg) rotateY(18deg) rotateZ(-24deg) translate(100px, -20px);
-      font-size: calc(13px + 2vmax);
-      box-shadow: -70px 122px 170px 0 #FFF5F1;
-      @include media($phone){
-        font-size: 24px;
-        opacity: 0.2!important;
-      }
-      @include media($medium){
-        opacity: 0.2!important;
-      }
-      border-radius: 50%;
-      z-index: -1;
-    }
-
-
-  .i-1{
-    @include position(absolute, 5%, 20%);
-  }
-  .i-2{
-    @include position(absolute, 30%, 12%);
-  }
-  .i-3{
-    @include position(absolute, 65%, 20%);
-    @include media($medium){
-      top: 50%;
-    }
-  }
-  .i-4{
-    @include position(absolute, 55%, 4%);
-    @include media($medium){
-      top: 45%;
-    }
-  }
-  .i-5{
-    @include position(absolute, 5%, 4%);
-  }
-  .i-6{
-    top: 5%;
-    right: 20%;
-  }
-  .i-7{
-     top: 30%;
-     right: 12%;
-  }
-  .i-8{
-    top: 65%;
-    right: 20%;
-    @include media($medium){
-      top: 50%;
-    }
-  }
-  .i-9{
-    top: 55%;
-    right: 4%;
-    @include media($medium){
-      top: 45%;
-    }
-  }
-  .i-10{
-    top: 5%;
-    right: 4%;
-  }
-  .i-11{
-    top: 63%;
-    right: 48%;
-    @include media($medium){
-      top: 48%;
-    }
-  }
 }

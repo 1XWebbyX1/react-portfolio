@@ -4,6 +4,7 @@ import './index.css';
 import App from './App';
 import img from './images/main-img-data'
 import $ from 'jquery'
+import "@babel/polyfill";
 import {TweenMax, TimelineMax, Back, Bounce} from "gsap/TweenMax";
 //import * as serviceWorker from './serviceWorker';
 import THREELib from "three-js";

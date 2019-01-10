@@ -6,7 +6,7 @@
   height: 90vh;
   text-align: center;
   transform: translate3d(0,100, 0);
-  font-size: calc(1em + 2.7vmax);
+  font-size: calc(1.2em + 2.5vw);
   @include media($tab){
     height: 100vh;
   }
@@ -27,7 +27,7 @@
 
   .wrapper{
     @include display(row, center, center);
-    margin-top: calc(12% + 7vmax);
+    margin-top: calc(13% + 6vw);
     @include media($tab){
       margin-top: 25%;
     }
@@ -85,7 +85,7 @@
 
       .icon{
         color: #fff5f1;
-        font-size: calc(2rem + 1vmax);
+        font-size: calc(2rem + 1vw);
         margin: 0 auto;
       }
 
