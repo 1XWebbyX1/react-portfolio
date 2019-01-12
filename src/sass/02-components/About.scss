@@ -1,56 +1,147 @@
 #about{
   @include position(relative, 0, 0);
-  height: 120vh;
+  height: auto;
   width: 100%;
   text-align: center;
-  font-size: calc(1.2em + 2.5vw);
+  padding-bottom: 20vh;
+  font-size: calc(1.7em + 2vw);
   @include media($tab){
-    height: 90vh;
+    
   }
 
 
   h3{
      font-size: $md;
      color: #CA7564;
-     margin-top: 10%;
+     margin-top: 4%;
+     //margin-left: 15%;
      padding: 0 !important;
      @include media($tab){
         margin-top: 12%;
+        margin-left: 0% !important;
       }
   }
 
   h1{
-    margin-top: -1% !important;
+    margin-top: -2.5% !important;
+  //   margin-left: 15%;
     padding: 0 !important;
     font-weight: 800;
     color:  #d9d9d9;
     font-family: 'Quantico';
+    @include media($tab){
+       margin-left: 0% !important;
+     }
   }
+
+  .icon{
+     position: absolute;
+     color: #FFF5F1;
+     opacity: 0.3;
+     visibility: visible;
+     transform: scale(0.2) rotateX(30deg) rotateY(18deg) rotateZ(-24deg) translate(100px, -20px);
+     font-size: calc(13px + 2vmax);
+     box-shadow: -70px 122px 170px 0 #FFF;
+     @include media($phone){
+       font-size: 24px;
+       opacity: 0.2!important;
+     }
+     @include media($medium){
+       opacity: 0.2!important;
+     }
+     border-radius: 50%;
+     z-index: -1;
+   }
+
+
+
+ .i-1{
+   @include position(absolute, 50%, 5%);
+ }
+ .i-2{
+   @include position(absolute, 52%, 20%);
+ }
+ .i-3{
+   @include position(absolute, 68%, 30%);
+    //box-shadow: -70px -122px 170px 0 #FFF;
+   @include media($medium){
+     top: 50%;
+   }
+ }
+ .i-4{
+   @include position(absolute, 55%, 4%);
+  //  box-shadow: -70px -122px 170px 0 #FFF;
+   @include media($medium){
+     top: 45%;
+   }
+ }
+ .i-5{
+   @include position(absolute, 60%, 15%);
+   //box-shadow: -70px -122px 170px 0 #FFF;
+ }
+ .i-6{
+   top: 52%;
+   right: 20%;
+ }
+ .i-7{
+    top: 60%;
+    // box-shadow: -70px -122px 170px 0 #FFF;
+    right: 15%;
+ }
+ .i-8{
+   top: 68%;
+    //box-shadow: -70px -122px 170px 0 #FFF;
+   right: 30%;
+   @include media($medium){
+     top: 50%;
+   }
+ }
+ .i-9{
+   top: 55%;
+  //  box-shadow: -70px -122px 170px 0 #FFF;
+   right: 4%;
+   @include media($medium){
+     top: 45%;
+   }
+ }
+ .i-10{
+   top: 50%;
+   right: 4%;
+ }
+ .i-11{
+   top: 63%;
+    //box-shadow: -70px -122px 170px 0 #FFF;
+   right: 48%;
+   @include media($medium){
+     top: 48%;
+  }
+ }
 
   .information{
     height: auto;
     display: flex;
-    margin: -4% 2%;
+    flex-direction: column;
     justify-content: space-between;
-    padding: 0 2%;
 
     .widget-icons{
+      margin-top: 1%;
       display: flex;
       flex-direction: column;
+      align-items: center;
       justify-content: space-around;
 
       #title-circle{
-        width: 200px;
-        height: 200px;
+        width: 80px;
+        height: 80px;
         display: flex;
         justify-content: center;
         align-items: center;
         border-radius: 50%;
-        border: solid 1px #d9d9d9;
-        animation: bounce 8s ease infinite;
-        box-shadow: inset 0px 5px 25px #CA7564, 0px 5px 25px #CA7564 ;
+        border: solid 1px #CA7564;
+        animation: bounceFaster 13s ease infinite;
+        box-shadow: inset 0px 1px 5px #CD7635, 0px 5px 25px white ;
         @include media($phone-tab){
-          display: none;
+          //display: none;
        }
         #about-svg{
           display: block;
@@ -91,18 +182,11 @@
     #display-card{
       background: #0a0a0a;
       height: auto;
-      width: 80%;
-      @include media($phone-tab){
-        width: 100%;
-     }
+      width: 100vw;
 
       .content{
-        text-align: left;
+        text-align: center;
         padding: 2%;
-
-        h3{
-          margin-top: 0;
-        }
 
         #intro{
           display: block;
@@ -117,22 +201,31 @@
 
           .row{
             display: flex;
+            flex-wrap: wrap;
+            flex: 100px 1 1;
+            justify-content: center;
           }
 
           .card{
+          //  box-shadow: 0px 0px 10px #222;
             width: auto;
             height: auto;
-            padding: 2px 10px;
-            margin: 0 1%;
-            border: 0.5px solid #d3d3d3;
+            padding: 2px 15px;
+            margin: 1% 0.2%;
+            border: 0.5px solid #d9d9d9;
+            @include media($phone-tab){
+                margin: 1% 0;
+           }
+
 
             h3{
-              font-size: calc(0.24em + 0.4vw);
+              font-size: calc(0.3em + 0.1vw);
               color: white;
+              margin-left: 0;
             }
 
             p{
-              font-size: calc(0.24em + 0.4vw);
+              font-size: calc(0.3em + 0.1vw);
               color: #d3d3d3;
             }
 
@@ -150,31 +243,32 @@
           }
         }
 
-         .button{
-             width: 100%;
-             height: auto;
-             padding: 12px 24px;
-             font-size: $md;
-             color: white;
-             cursor: pointer;
-             border: 1px solid #CA7564;
-             box-sizing: border-box;
-             background: transparent;
-             text-align: center;
-             text-transform: uppercase;
-             font-weight: 800;
-             box-shadow: none;
-             border-radius: 5px;
-             transition: all 150ms;
-           @include media($phone){
-             padding: 12px 12px;
-           }
-           &:hover{
-               background: white;
-               color: black;
-               box-shadow: 0px 5px 25px #CA7564;
+        .button{
+            width: 100%;
+            height: auto;
+            padding: 12px 24px;
+            font-size: $md;
+            color: white;
+            cursor: pointer;
+            border: 1px solid #CA7564;
+            //margin: 2%;
+            box-sizing: border-box;
+            background: transparent;
+            text-align: center;
+            text-transform: uppercase;
+            font-weight: 800;
+            box-shadow: none;
+            border-radius: 5px;
+            transition: all 150ms;
+          @include media($phone){
+            padding: 12px 12px;
           }
-       }
+          &:hover{
+              background: white;
+              color: black;
+              box-shadow: 0px 5px 25px #CA7564;
+            }
+        }
     }
   }
 

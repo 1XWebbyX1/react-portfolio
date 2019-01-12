@@ -46,7 +46,29 @@ ReactDOM.render(<App />, document.getElementById('root'));
 
     //GSAP for animations_____________________________________________________________________________________
 
+var tm = new TimelineMax({paused: true});
+tm.fromTo('.i-11', .5, {top: '11%', right: '49%'}, {top: '25%', right: '55.5%'},)
+.fromTo('.i-8', .5, {top: '10%', right: '25%'}, {top: '16%', right: '51%'}, '-=0.48')
+.fromTo('.i-7', .5, {top: '8%', right: '15%'}, {top: '13%', right: '53%'}, '-=0.48')
+.fromTo('.i-4', .5, {top: '2%', left: '4%'}, {top: '25%', left: '55%'}, '-=0.48')
+.fromTo('.i-2', .5, {top: '0%', left: '20%'}, {top: '16.3%', left: '51.5%'}, '-=0.48')
+.fromTo('.i-1', .25, {top: '2%', left: '35%'}, {top: '13%', left: '54%'}, '-=0.20')
+.fromTo('.i-3', .25, {top: '10%', left: '30%'}, {top: '20%', left: '40%'}, '-=0.20')
+.fromTo('.i-6', .25, {top: '0%', right: '20%'}, {top: '20%', right: '40%'}, '-=0.20')
+.fromTo('.i-5', .25, {top: '8%', left: '15%'}, {top: '20%', left: '43%'}, '-=0.20')
+.fromTo('.i-9', .25, {top: '2%', right: '4%'}, {top: '13.3%', right: '49%'}, '-=0.20')
+.fromTo('.i-10', .25, {top: '2%', right: '30%'}, {top: '20%', right: '43.5%'}, '-=0.20');
 
+
+$('#intro-button').click(() => {
+  tm.play();
+  //$('#about .icon').addClass('bounce');
+})
+
+$('#skills-button').click(() => {
+  tm.reverse();
+  //$('#about .icon').removeClass('bounce');
+})
 //main home page animation-------------------
 
 var tl = new TimelineMax({delay: 2.8});

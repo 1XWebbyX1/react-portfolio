@@ -19,6 +19,8 @@ class About extends React.Component{
     $('#skills').css('display', 'block');
     $('#about-svg').css('display', 'none');
     $('#skills-svg').css('display', 'block');
+    $('#about #head').text('SKILLS AND ABILITIES');
+    //$('.container .icon').css('visibility', 'hidden');
     TweenMax.staggerFromTo('.card', 0.5, {x: 1000}, {x: 0}, 0.01);
     TweenMax.fromTo('#svgs', 2, {rotationY: 0, transformOrigin:"center"}, {rotationY: 180, transformOrigin:"center"}).yoyo(true);
   }
@@ -28,14 +30,21 @@ class About extends React.Component{
     $('#skills').css('display', 'none');
     $('#about-svg').css('display', 'block');
     $('#skills-svg').css('display', 'none');
+    $('#about #head').text('INTRODUCTION');
+    //$('.container .icon').css('visibility', 'visible');
     TweenMax.fromTo('#intro-p', 0.5, {y: 40}, {y: 0});
     TweenMax.fromTo('#svgs', 2, {rotationY: 0, transformOrigin:"center"}, {rotationY: 180, transformOrigin:"center"}).yoyo(true);
   }
 
   render(){
+    // loop through icons arr to create i elements
+    var arr = icons.map((a) => {
+      return <FontAwesomeIcon className={a.class} icon={a.icon} />
+    });
+
     return(
      <section id='about'>
-         <h3 class='anim'>Introduction</h3>
+         <h3 id='head' class='anim'>Introduction</h3>
          <h1 class='anim'>About Me</h1>
 
          <div class='information'>
@@ -54,12 +63,10 @@ class About extends React.Component{
          <div id='display-card' class='anim'>
           <div class='content'>
           <article id='intro'>
-           <h3> Brief Introduction </h3>
            <p id='intro-p'> A passionate front end developer, a self learner, who aims to bring perfection in design and efficiency within each project taken. I target a great user experience through a creative visual design and high web performance in my work. I am currently looking for a challenging environment to enhance my skills.<br /><br />  My mantra for work would be  'Learn, Use, Research and Improve'.</p>
-           <button class='button' onClick={this.showSkills}> Unlock my Skills </button>
+           <button id='intro-button' class='button' onClick={this.showSkills}> Unlock my Skills </button>
            </article>
            <article id='skills'>
-            <h3> Skills and Abilities </h3>
             <div class='row'>
             <div class='card'>
               <h3>Core</h3>
@@ -86,8 +93,8 @@ class About extends React.Component{
               <hr />
               <p>npm<br />webpack</p>
             </div>
-            </div>
-            <div class='row'>
+            {/*</div>
+            <div class='row'>*/}
             <div class='card'>
               <h3>Task Runners</h3>
               <hr />
@@ -114,12 +121,14 @@ class About extends React.Component{
               <p>Java<br /> FontAwesome<br /> Devicon</p>
             </div>
             </div>
-            <button class='button' onClick={this.showIntro}> Back to Introduction </button>
+            <button id='skills-button' class='button' onClick={this.showIntro}> Back to Introduction </button>
             </article>
           </div>
          </div>
          </div>
-
+         <div class='container'>
+           {arr}
+         </div>
 
       </section>
     )
