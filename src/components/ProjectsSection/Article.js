@@ -1,7 +1,7 @@
 import React from 'react'
 import asyncComponent from '../asyncComponent/async'
 import $ from 'jquery'
-import src from './data/fallback'
+import src from './data/imageStrings'
 import markdown from './data/images/markdown.png'
 import projects from './data/projectsData.js'
 import {TimelineMax, Elastic} from "gsap/TweenMax";
@@ -44,13 +44,13 @@ class Article extends React.Component{
 
   //animation between transition
   animateChange(){
-    var x = window.matchMedia("(max-width: 800px)");
+    var x = window.matchMedia("(max-width: 800px)"); //for tablets screen and below
     var height;
     if (x.matches) { // If media query matches
      height = 'auto';
     } else {
       height = '350px';
-    } // Call listener function at run time
+    }
 
    var tl = new TimelineMax({delay: 0.3, repeat: 1, repeatDelay: 0.2, yoyo: true, ease: Elastic.easeOut});
    tl.fromTo('.arrow', 0.4 ,{visibility: 'visible'}, {visibility: 'hidden'}, '-=0.4')

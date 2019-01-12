@@ -13,7 +13,7 @@
     '01-generic/_base';
 
 
-// 2. Components – specific UI components. This is where majority of our work takes place and our UI components are often composed of Objects and Components
+// 2. Components – specific UI components. This is where majority of our work takes place
 
 @import
     '02-components/Loader',
@@ -23,6 +23,6 @@
     '02-components/Contact';
 
 
-  // 3. Utilities– utilities and helper classes with ability to override anything which goes before in the triangle, eg. hide helper class
+  // 3. Utilities– utilities and helper classes with ability to override anything 
 @import
     '03-utilities/_animation';

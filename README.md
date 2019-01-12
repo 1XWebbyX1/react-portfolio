@@ -12,7 +12,7 @@ Project is created with :
 - Sass: 4.11
 - jQuery: 3.3
 - Three-js: 79.0
-- gsap: 2.0
+- GSAP: 2.0
 
 # You may also like
 - [Markdown Previewer](https://github.com/1XWebbyX1/markdown-previewer-pwa)
