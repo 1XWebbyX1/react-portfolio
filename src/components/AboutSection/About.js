@@ -1,11 +1,20 @@
 import React from 'react'
 import icons from './data/icons'
 import $ from 'jquery'
+//import asyncComponent from '../asyncComponent/async'
+
 import Widget from './Widget'
 import InfoHolder from './InfoHolder'
 import {TweenMax} from "gsap/TweenMax";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
+/*const Widget = asyncComponent(() =>
+    	    import('./Widget').then(module => module.default)
+    	);
+
+const InfoHolder = asyncComponent(() =>
+          import('./InfoHolder').then(module => module.default)
+    	);*/
 
 class About extends React.Component{
   constructor(props){

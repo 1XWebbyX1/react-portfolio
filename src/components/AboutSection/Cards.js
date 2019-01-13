@@ -28,32 +28,32 @@ class Cards extends React.Component {
       <div class='card'>
         <h3>Package Manager and <br />Module Loader/Bundler</h3>
         <hr />
-        <p>npm<br />webpack</p>
+        <p>NPM<br />Webpack</p>
       </div>
       <div class='card'>
         <h3>Task Runners</h3>
         <hr />
-        <p>npm scripts<br />gulp</p>
+        <p>Gulp<br />npm scripts</p>
       </div>
       <div class='card'>
         <h3>Version Control System</h3>
         <hr />
-        <p>git<br />git hub</p>
+        <p>Git<br />GitHub</p>
       </div>
       <div class='card'>
-        <h3>Knowledge of</h3>
+        <h3>Understanding of</h3>
         <hr />
-        <p> ES6<br /> Responsive design<br /> Cross browser compatiblity<br /> good web performance including SEO principles and Acessibility<br /> working with command line</p>
+        <p> ES6<br />web development process <br/>(design, develop, test & deploy, analyze & maintain)<br /> Responsive design<br /> Cross browser compatiblity<br /> basic SEO design principles and Acessibility<br />command line</p>
       </div>
       <div class='card'>
         <h3>Tools</h3>
         <hr />
-        <p>Adobe Illustrator and Photoshop<br /> Atom<br /> working with Browser developer tools for debugging<br /> optimized Images for web</p>
+        <p>Adobe Illustrator and Photoshop<br /> Atom<br /> working with Browser developer tools for debugging<br /> Page Speed Insights by Lighthouse to analyze web performance</p>
       </div>
       <div class='card'>
         <h3>More</h3>
         <hr />
-        <p>Java<br /> FontAwesome<br /> Devicon</p>
+        <p>Java<br /> SQL <br />PostgreSQL <br /> JDBC API<br />FontAwesome<br /> Devicon</p>
       </div>
       </div>
     )

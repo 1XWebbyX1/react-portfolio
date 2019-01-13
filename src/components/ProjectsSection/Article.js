@@ -24,6 +24,7 @@ class Article extends React.Component{
     this.state = {
       index: 0,
       project: function() {return projects[this.index].project},
+      details: function() {return projects[this.index].details},
       description: function() {return projects[this.index].description},
       src: function() {return src[this.index]},
       graph: function() {return projects[this.index].graph},
@@ -38,8 +39,7 @@ class Article extends React.Component{
   //disable previous button initially
   componentDidMount(){
     $('.fa-arrow-circle-left').css('opacity', '0.1');
-
-  }
+}
 
 
   //animation between transition
@@ -66,10 +66,15 @@ class Article extends React.Component{
          this.setState({
            index: this.state.index + 1
        });
+       $('.inner #project').css('filter', 'blur(45px)');
        setTimeout(function(){
          import('' + this.state.src())
          .then(src => {
            $('#project').attr('src', src.default);
+         }).then(() => {
+           $('.inner img').on('load', function() {
+               $('#project').css('filter', 'blur(0px)')
+            });
          })
        }.bind(this), 200);
     }
@@ -114,7 +119,7 @@ class Article extends React.Component{
 
         <div class='small-icon'>
          <div class='holder'  onClick={this.handlePrev}><FontAwesomeIcon className="icon-s" icon={faArrowCircleLeft}/></div>
-            <p class='anim'>A {this.state.project()}, designed and coded by following an iterative approach. The Project used <span class='highlight'>{this.state.description()}</span>. The design is responsive and cross-browser compatible.</p>
+            <p class='anim'>A {this.state.details()}, designed and coded by following an iterative approach. The Project used <span class='highlight'>{this.state.description()}</span>. The design is responsive and has wide browser support.</p>
           <div class='holder'  onClick={this.handleNext}><FontAwesomeIcon className="icon-s"  onClick={this.handleNext} icon={faArrowCircleRight}/></div>
         </div>
 
