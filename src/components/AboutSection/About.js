@@ -19,8 +19,12 @@ class About extends React.Component{
     $('#about-svg').css('display', 'none');
     $('#skills-svg').css('display', 'block');
     $('#about #head').text('SKILLS AND ABILITIES');
+    $('#title-circle').removeClass('bounce');
     TweenMax.staggerFromTo('.card', 0.5, {x: 1000}, {x: 0}, 0.01);
     TweenMax.fromTo('#svgs', 2, {rotationY: 0, transformOrigin:"center"}, {rotationY: 180, transformOrigin:"center"}).yoyo(true);
+    setTimeout(function() {
+      $('#title-circle').addClass('bounce');
+    }, 2000)
   }
 
   showIntro(){

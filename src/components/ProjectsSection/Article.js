@@ -66,7 +66,7 @@ class Article extends React.Component{
          }).then(() => {
            $('.inner img').on('load', function() {
              var tl = new TimelineMax();
-              tl.fromTo('#project', 0.4 ,{filter: 'blur(45px)'}, {filter: 'blur(0px)'});
+              tl.fromTo('#project', 0.4 ,{filter: 'blur(15px)'}, {filter: 'blur(0px)'});
             });
          })
        }.bind(this), 200);

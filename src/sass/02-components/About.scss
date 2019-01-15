@@ -133,7 +133,6 @@
         align-items: center;
         border-radius: 50%;
         border: solid 1px #CA7564;
-        animation: bounceFaster 13s ease infinite;
         box-shadow: inset 0px 1px 5px #CD7635, 0px 5px 25px white ;
         @include media($phone-tab){
           //display: none;

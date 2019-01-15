@@ -4,7 +4,6 @@ import './index.css';
 import App from './App';
 import $ from 'jquery'
 import "@babel/polyfill";
-import canvas from './animation_modules/canvas'
 
 
 ReactDOM.render(<App />, document.getElementById('root'));
@@ -14,13 +13,11 @@ ReactDOM.render(<App />, document.getElementById('root'));
 
   setTimeout(function(){
     //cnvas homepage animation
-  /*  import('./animation_modules/canvas')
+    import('./animation_modules/canvas')
    .then(module => {
     module.default.start();
-  });*/
-
-  canvas.start();
-
+    })
+    .then(function(){
       import('./animation_modules/jqueryTransitions')
       .then(module => {
         module.default.start();
@@ -44,5 +41,8 @@ ReactDOM.render(<App />, document.getElementById('root'));
     .then(module => {
       $(window).scroll(module.default.onScroll);
     });
+    })
+
+
 
  }, 8000);

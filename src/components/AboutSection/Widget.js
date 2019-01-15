@@ -6,7 +6,7 @@ class Widget extends React.Component {
   render(){
     return(
       <div class='widget-icons'>
-         <div id='title-circle'>
+         <div id='title-circle' class='bounce'>
             <div id='svgs'>
               <AboutSvg />
               <SkillsSvg />
