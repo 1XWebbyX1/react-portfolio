@@ -1,9 +1,5 @@
 import React from 'react'
-import asyncComponent from '../asyncComponent/async'
-
-const Article = asyncComponent(() =>
-    	    import('./Article').then(module => module.default)
-    	);
+import Article from './Article'
 
 class Projects extends React.Component{
   render(){

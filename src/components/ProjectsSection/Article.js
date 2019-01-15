@@ -1,5 +1,4 @@
 import React from 'react'
-import asyncComponent from '../asyncComponent/async'
 import $ from 'jquery'
 import src from './data/imageStrings'
 import markdown from './data/images/markdown.png'
@@ -8,15 +7,8 @@ import {TimelineMax, Elastic} from "gsap/TweenMax";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {faGithub} from '@fortawesome/free-brands-svg-icons'
 import { faLaptopCode,faArrowCircleLeft, faArrowCircleRight} from '@fortawesome/free-solid-svg-icons'
-
-
-const Arrow = asyncComponent(() =>
-    	    import('./Arrow').then(module => module.default)
-    	);
-
-const Graph = asyncComponent(() =>
-           import('./Graph').then(module => module.default)
-        );
+import Arrow from './Arrow'
+import Graph from './Graph'
 
 class Article extends React.Component{
   constructor(props){
@@ -39,7 +31,7 @@ class Article extends React.Component{
   //disable previous button initially
   componentDidMount(){
     $('.fa-arrow-circle-left').css('opacity', '0.1');
-}
+  }
 
 
   //animation between transition
@@ -73,7 +65,8 @@ class Article extends React.Component{
            $('#project').attr('src', src.default);
          }).then(() => {
            $('.inner img').on('load', function() {
-               $('#project').css('filter', 'blur(0px)')
+             var tl = new TimelineMax();
+              tl.fromTo('#project', 0.4 ,{filter: 'blur(45px)'}, {filter: 'blur(0px)'});
             });
          })
        }.bind(this), 200);

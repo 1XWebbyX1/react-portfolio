@@ -40,7 +40,7 @@
 
   p{
     @include position(absolute, 64%, 50%);
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%)!important;
     font-size: calc(0.6em + 0.7vw);
     color:#050505;
     text-align: center;
@@ -83,8 +83,8 @@
   }
 
   #project-btn{
-    left: 10% !important;
-    transform: translate(-50%, -50%);
+    left: 10%;
+    transform: translate(-50%, -50%)!important;
     padding-left: 90px;
     box-shadow: -30px -10px #070707;
      &:hover{
@@ -101,9 +101,9 @@
   }
 
   #about-btn{
-     left: 85% !important;
+     left: 85%;
      padding-right: 90px;
-     transform: translate(-50%, -50%);
+     transform: translate(-50%, -50%)!important;
      box-shadow: 30px -10px #070707;
      &:hover{
        box-shadow: 0px -1px 20px white;
@@ -112,7 +112,6 @@
     }
      @include media($phone-tab){
        padding-right: 0px;
-       left: 85%;
        box-shadow: none;
        animation: opacityAnim 3s ease infinite;
     }
@@ -145,15 +144,15 @@
   #line-0{
     top: 62%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%)!important;
   }
   #line-1{
      left: 12%;
-    transform: translate(-50%, -50%)
+    transform: translate(-50%, -50%)!important;
   }
 
   #line-2{
      left: 87%;
-    transform: translate(-50%, -50%)
+    transform: translate(-50%, -50%)!important;
   }
 }

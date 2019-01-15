@@ -1,9 +1,6 @@
 import React from 'react'
-import asyncComponent from '../asyncComponent/async'
-
-const Bar = asyncComponent(() =>
-    	    import('./Bar').then(module => module.default)
-    	);
+//import asyncComponent from '../asyncComponent/async'
+import Bar from './Bar'
 
 class Graph extends React.Component{
   render(){

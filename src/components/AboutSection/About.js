@@ -1,20 +1,10 @@
 import React from 'react'
 import icons from './data/icons'
 import $ from 'jquery'
-//import asyncComponent from '../asyncComponent/async'
-
 import Widget from './Widget'
 import InfoHolder from './InfoHolder'
 import {TweenMax} from "gsap/TweenMax";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-
-/*const Widget = asyncComponent(() =>
-    	    import('./Widget').then(module => module.default)
-    	);
-
-const InfoHolder = asyncComponent(() =>
-          import('./InfoHolder').then(module => module.default)
-    	);*/
 
 class About extends React.Component{
   constructor(props){
@@ -29,7 +19,6 @@ class About extends React.Component{
     $('#about-svg').css('display', 'none');
     $('#skills-svg').css('display', 'block');
     $('#about #head').text('SKILLS AND ABILITIES');
-    //$('.container .icon').css('visibility', 'hidden');
     TweenMax.staggerFromTo('.card', 0.5, {x: 1000}, {x: 0}, 0.01);
     TweenMax.fromTo('#svgs', 2, {rotationY: 0, transformOrigin:"center"}, {rotationY: 180, transformOrigin:"center"}).yoyo(true);
   }
@@ -40,16 +29,14 @@ class About extends React.Component{
     $('#about-svg').css('display', 'block');
     $('#skills-svg').css('display', 'none');
     $('#about #head').text('INTRODUCTION');
-    //$('.container .icon').css('visibility', 'visible');
     TweenMax.fromTo('#intro-p', 0.5, {y: 40}, {y: 0});
     TweenMax.fromTo('#svgs', 2, {rotationY: 0, transformOrigin:"center"}, {rotationY: 180, transformOrigin:"center"}).yoyo(true);
   }
 
   render(){
-    // loop through icons arr to create i elements
-    var arr = icons.map((a) => {
-      return <FontAwesomeIcon className={a.class} icon={a.icon} />
-    });
+      var arr = icons.map((a) => {
+          return <FontAwesomeIcon className={a.class} icon={a.icon} />
+        });
 
     return(
      <section id='about'>

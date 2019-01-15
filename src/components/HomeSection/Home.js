@@ -1,12 +1,8 @@
 import React from 'react'
-import asyncComponent from '../asyncComponent/async';
+//import asyncComponent from '../asyncComponent/async';
 import $ from 'jquery'
+import Lines from './Lines'
 
-
-//dynamic import
-const Lines = asyncComponent(() =>
-    	    import('./Lines').then(module => module.default)
-    	);
 
 
 

@@ -1,13 +1,18 @@
 import React from 'react'
-import asyncComponent from '../asyncComponent/async';
+//import asyncComponent from '../asyncComponent/async';
 import { faCodepen, faGithub} from '@fortawesome/free-brands-svg-icons'
 import { faEnvelope} from '@fortawesome/free-regular-svg-icons'
+import Card from './Card'
 
-const Card = asyncComponent(() =>
-    	    import('./Card').then(module => module.default)
-    	);
 
 class Contact extends React.Component{
+
+  componentDidMount(){
+     import('./background.jpg')
+     .then(src => {
+       document.getElementById("background").src= src.default;
+     })
+   }
 
   render(){
     return(
@@ -23,10 +28,10 @@ class Contact extends React.Component{
 
         <div class='snap-wrap'>
          <figure id='snap'>
-           <img src='https://i.ibb.co/mH3cvXx/mike-wilson-48019-unsplashedited.jpg' alt='sea background'/>
+           <img id ='background' src='' alt='sea background'/>
          </figure>
       </div>
-        <p>Copyright 2018 Khayati Asrani, All Rights Reserved</p>
+        <p>View <a href='https://github.com/1XWebbyX1/react-portfolio' target="_blank" rel="noopener noreferrer">code</a> for this project.<br/>Copyright 2018 Khayati Asrani, All Rights Reserved</p>
       </section>
     )
   }

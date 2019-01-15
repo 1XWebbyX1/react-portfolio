@@ -1,15 +1,6 @@
 import React from 'react'
-//import asyncComponent from '../asyncComponent/async'
-
 import AboutSvg from './AboutSvg'
 import SkillsSvg from './SkillsSvg'
-
-/*const AboutSvg = asyncComponent(() =>
-    	    import('./AboutSvg').then(module => module.default)
-    	);
-const SkillsSvg = asyncComponent(() =>
-         import('./SkillsSvg').then(module => module.default)
-    );*/
 
 class Widget extends React.Component {
   render(){

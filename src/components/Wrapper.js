@@ -1,9 +1,7 @@
 import React from 'react'
 import asyncComponent from './asyncComponent/async'
 
-const Home = asyncComponent(() =>
-    	    import('./HomeSection/Home').then(module => module.default)
-    	);
+import Home from './HomeSection/Home'
 
 const Projects = asyncComponent(() =>
      import('./ProjectsSection/Projects').then(module => module.default)

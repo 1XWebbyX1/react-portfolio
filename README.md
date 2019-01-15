@@ -1,7 +1,7 @@
 # Portfolio
 Portfolio project bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-![screenshot](https://i.ibb.co/JzSbdWX/Screen-Shot-2018-12-27-at-01-08-37.png)
+![screenshot](https://i.ibb.co/pnnRsF7/Screen-Shot-2019-01-15-at-21-20-07-1.png)
 
 # Visit
 Visit the portfolio at [github](https://1xwebbyx1.github.io/react-portfolio/).

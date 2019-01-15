@@ -1,10 +1,5 @@
 import React from 'react'
-//import asyncComponent from '../asyncComponent/async'
-
 import Cards from './Cards'
-/*const Cards = asyncComponent(() =>
-    	    import('./Cards').then(module => module.default)
-    	);*/
 
 class InfoHolder extends React.Component {
   render(){
