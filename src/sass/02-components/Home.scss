@@ -96,7 +96,7 @@
        left: 15%;
        padding-left:0px;
        box-shadow: none;
-       animation: opacityAnim 3s ease infinite;
+       animation: opacityAnim 3s ease infinite!important;
     }
   }
 
@@ -113,7 +113,7 @@
      @include media($phone-tab){
        padding-right: 0px;
        box-shadow: none;
-       animation: opacityAnim 3s ease infinite;
+       animation: opacityAnim 3s ease infinite!important;
     }
   }
 

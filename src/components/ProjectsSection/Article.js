@@ -58,7 +58,7 @@ class Article extends React.Component{
          this.setState({
            index: this.state.index + 1
        });
-       $('.inner #project').css('filter', 'blur(45px)');
+       $('.inner #project').css('filter', 'blur(15px)');
        setTimeout(function(){
          import('' + this.state.src())
          .then(src => {
