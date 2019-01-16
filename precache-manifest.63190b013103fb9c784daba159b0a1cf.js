@@ -8,20 +8,20 @@ self.__precacheManifest = [
     "url": "/react-portfolio/static/js/1.37a7c18b.chunk.js"
   },
   {
-    "revision": "799b63523b801d643c5e",
-    "url": "/react-portfolio/static/css/main.272295bc.chunk.css"
+    "revision": "466994d74d34697b4b3f",
+    "url": "/react-portfolio/static/css/main.4405dee0.chunk.css"
   },
   {
-    "revision": "799b63523b801d643c5e",
-    "url": "/react-portfolio/static/js/main.799b6352.chunk.js"
+    "revision": "466994d74d34697b4b3f",
+    "url": "/react-portfolio/static/js/main.466994d7.chunk.js"
   },
   {
     "revision": "82ecdbe8dbcba297a74d",
     "url": "/react-portfolio/static/js/3.82ecdbe8.chunk.js"
   },
   {
-    "revision": "f2e25941f8384289751d",
-    "url": "/react-portfolio/static/js/4.f2e25941.chunk.js"
+    "revision": "dd06072e8314d303e46f",
+    "url": "/react-portfolio/static/js/4.dd06072e.chunk.js"
   },
   {
     "revision": "bb988cacaa7e2c92a611",
@@ -96,8 +96,8 @@ self.__precacheManifest = [
     "url": "/react-portfolio/static/js/22.76d1d6a6.chunk.js"
   },
   {
-    "revision": "e24c3554f661df73cde2",
-    "url": "/react-portfolio/static/js/runtime~main.e24c3554.js"
+    "revision": "9fb7c547c9754254ab6d",
+    "url": "/react-portfolio/static/js/runtime~main.9fb7c547.js"
   },
   {
     "revision": "f5a89c0330051a418ac3c0fbc5105786",
@@ -132,7 +132,7 @@ self.__precacheManifest = [
     "url": "/react-portfolio/static/media/background.d1c29dc5.jpg"
   },
   {
-    "revision": "74e668dba67dc45bc1b014bfb90d6976",
+    "revision": "13a69c7ada1ce34b29107ae02af0af12",
     "url": "/react-portfolio/index.html"
   }
 ];
