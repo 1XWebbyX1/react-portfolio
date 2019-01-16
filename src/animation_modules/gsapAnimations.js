@@ -26,25 +26,25 @@ var animations = (function () {
 
   var start = function(){
     //main home page animation-------------------
-    var tl = new TimelineMax({delay: 2.8});
-    return tl.from('#home h1', .75, {left: '150%', boxShadow: '1500px 0px 0px inset #050505', color: '#050505', ease: Back.easeOut, textShadow: 'none'})
-     .to('#home h1', 0.5, {boxShadow: '0px 0px 0px inset #050505', color: '#d9d9d9', textShadow:   `  0 1px 0 hsl(174,5%,80%),
-    	                 0 2px 0 hsl(174,5%,75%),
-    	                 0 3px 0 hsl(174,5%,70%),
-    	                 0 4px 0 hsl(174,5%,66%),
-    	                 0 5px 0 hsl(174,5%,64%),
-    	                 0 6px 0 hsl(174,5%,62%),
-    	                 0 7px 0 hsl(174,5%,61%),
-    	                 0 8px 0 hsl(174,5%,60%),
+    var tl = new TimelineMax({delay: 2.2, ease: Back.easeOut});
+    return tl.fromTo('#home h1', 0.75, {left: '250%', boxShadow: '1500px 0px 0px inset #050505', color: '#050505'}, {left: '0', boxShadow: '1500px 0px 0px inset #050505', color: '#050505', ease: Back.easeOut})
+     .to('#home h1', 0.5, {boxShadow: '0px 0px 0px inset #050505', color: '#d9d9d9', textShadow: `0 1px 0 hsl(174,5%,80%),
+ 	                 0 2px 0 hsl(174,5%,75%),
+ 	                 0 3px 0 hsl(174,5%,70%),
+ 	                 0 4px 0 hsl(174,5%,66%),
+ 	                 0 5px 0 hsl(174,5%,64%),
+ 	                 0 6px 0 hsl(174,5%,62%),
+ 	                 0 7px 0 hsl(174,5%,61%),
+ 	                 0 8px 0 hsl(174,5%,60%),
 
-    	                 0 0 5px rgba(0,0,0,.05),
-    	                0 1px 3px rgba(0,0,0,.2),
-    	                0 3px 5px rgba(0,0,0,.2),
-    	               0 5px 10px rgba(0,0,0,.2),
-    	              0 10px 10px rgba(0,0,0,.2),
-    	              0 20px 20px rgba(0,0,0,.3)`}, '+=.1')
-    .from('#home p, #home button, .line', 1, {opacity: 0,  ease:Bounce.easeOut, scale: 0.2}, '-=.75')
-     .to('#home p', 0.5, {boxShadow: '0px 0px 0px inset #050505', color: '#ddd'})
+ 	                 0 0 5px rgba(0,0,0,.05),
+ 	                0 1px 3px rgba(0,0,0,.2),
+ 	                0 3px 5px rgba(0,0,0,.2),
+ 	               0 5px 10px rgba(0,0,0,.2),
+ 	              0 10px 10px rgba(0,0,0,.2),
+ 	              0 20px 20px rgba(0,0,0,.3)`, delay: .2}, '+=.5')
+    .fromTo('#home p, #home button, .line', 1, {opacity: 0,  ease:Bounce.easeOut, scale: 0.2}, {opacity: 1,  scale: 1}, '-=.75')
+     .to('#home p', 0.5, {opacity: 1, boxShadow: '0px 0px 0px inset #050505', color: '#ddd'})
     .to('.line .one', 3, {x: 150, repeat: -1, yoyo: true, ease: Back.easeOut})
      .to('.line .two', 3, {x: -50, repeat: -1, yoyo: true, ease: Back.easeOut}, '-=2.5');
      //----------------------------------------------------------------

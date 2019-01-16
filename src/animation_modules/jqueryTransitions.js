@@ -4,9 +4,6 @@ import $ from 'jquery'
 var jqueryTransitions = (function () {
 
   var start = function(){
-    //display app after load--------
-    $('#loader').css('display', 'none');
-     $('#root').css('display', 'block');
 
   //hover on project function------------
   $('.inner').hover(function() {

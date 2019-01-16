@@ -22,8 +22,8 @@ class Contact extends React.Component{
 
         <div class='wrapper anim'>
           <Card id='email' icon={faEnvelope} text='khayatiasrani@gmail.com' button='Email' link='mailto:khayatiasrani@gmail.com'/>
-          <Card id='codepen' icon={faCodepen} text='https://codepen.io/1xwebbyx1/' button='Codepen Profile' link='https://codepen.io/1xwebbyx1/'/>
           <Card id='git' icon={faGithub} text='https://github.com/1XWebbyX1' button='GitHub Profile' link='https://github.com/1XWebbyX1'/>
+          <Card id='codepen' icon={faCodepen} text='https://codepen.io/1xwebbyx1/' button='Codepen Profile' link='https://codepen.io/1xwebbyx1/'/>
         </div>
 
         <div class='snap-wrap'>

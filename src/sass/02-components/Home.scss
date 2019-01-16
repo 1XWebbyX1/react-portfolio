@@ -16,11 +16,11 @@
   }
 
   h1{
-    @include position(absolute, 45%, 0%);
+    @include position(absolute, 45%, 250%);
     transform: translateY(-50%) ;
     font-size:calc(4.2em + 2.5vw);
     font-weight: 800;
-    font-family: 'Quantico';
+    font-family: 'Quantico', Helvetica, sans-serif;
     color: #050505;
     border: none;
     outline: none;
@@ -41,6 +41,7 @@
   p{
     @include position(absolute, 64%, 50%);
     transform: translate(-50%, -50%)!important;
+    opacity: 0;
     font-size: calc(0.6em + 0.7vw);
     color:#050505;
     text-align: center;
@@ -62,6 +63,7 @@
         font-size: calc(0.6em + 0.7vw);
         font-weight: 400;
         color: #444;
+        opacity: 0;
         border: none;
         border-radius: 5px;
         background: #111;
@@ -94,7 +96,7 @@
     }
      @include media($phone-tab){
        left: 15%;
-       padding-left:0px;
+       padding-left:0px !important;
        box-shadow: none;
        animation: opacityAnim 3s ease infinite!important;
     }
@@ -111,7 +113,7 @@
        padding-right: 90px;
     }
      @include media($phone-tab){
-       padding-right: 0px;
+       padding-right: 0px!important;
        box-shadow: none;
        animation: opacityAnim 3s ease infinite!important;
     }
@@ -123,6 +125,7 @@
       width: 200px;
       height: 4px;
       border: none;
+      opacity: 0;
       box-shadow: 0px 1px 4px inset #111;
      @include media($phone-tab){
        display: none;

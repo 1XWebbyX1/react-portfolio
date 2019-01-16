@@ -48,7 +48,7 @@ class Cards extends React.Component {
       <div class='card'>
         <h3>Tools</h3>
         <hr />
-        <p>Adobe Illustrator and Photoshop<br /> Atom<br /> working with Browser developer tools for debugging<br /> Page Speed Insights by Lighthouse to analyze web performance</p>
+        <p>Adobe Illustrator and Photoshop<br /> Atom<br /> working with Browser developer tools for debugging<br />Network Throttling with developer tools for better performance<br /> Page Speed Insights by Lighthouse to analyze web performance</p>
       </div>
       <div class='card'>
         <h3>More</h3>

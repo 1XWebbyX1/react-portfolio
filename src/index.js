@@ -11,29 +11,35 @@ ReactDOM.render(<App />, document.getElementById('root'));
 
 
 
+ $(document).ready(function(){
   setTimeout(function(){
-    //cnvas homepage animation
     import('./animation_modules/canvas')
    .then(module => {
-    module.default.start();
+     //display app after load--------
+     $('#loader').css('display', 'none');
+     $('#root').css('display', 'block');
+     //canvas homepage animation
+      module.default.start();
     })
     .then(function(){
+
+         //GSAP for animations_____________________________________________________________________________________
+
+         import('./animation_modules/gsapAnimations')
+         .then(module => {
+            module.default.start();
+           $('#intro-button').click(() => {
+             module.default.play();
+           })
+           $('#skills-button').click(() => {
+             module.default.reverse();
+           })
+
       import('./animation_modules/jqueryTransitions')
       .then(module => {
         module.default.start();
       });
 
-    //GSAP for animations_____________________________________________________________________________________
-
-    import('./animation_modules/gsapAnimations')
-    .then(module => {
-       module.default.start();
-      $('#intro-button').click(() => {
-        module.default.play();
-      })
-      $('#skills-button').click(() => {
-        module.default.reverse();
-      })
     });
 
     //scroll animations with debouncing---------------------------------------
@@ -43,6 +49,6 @@ ReactDOM.render(<App />, document.getElementById('root'));
     });
     })
 
+  }, 1500);
 
-
- }, 8000);
+});
