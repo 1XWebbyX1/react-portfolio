@@ -8,12 +8,12 @@ class Cards extends React.Component {
       <div class='card'>
         <h3>Core</h3>
         <hr />
-        <p>HTML<br />CSS<br />Javascript</p>
+        <p>HTML<br />CSS<br />Javascript<br />Node.js</p>
       </div>
       <div class='card'>
         <h3>JS Frameworks</h3>
         <hr />
-        <p>React<br />Redux</p>
+        <p>React<br />Redux<br />Express</p>
       </div>
       <div class='card'>
         <h3>JS libraries</h3>
@@ -41,19 +41,24 @@ class Cards extends React.Component {
         <p>Git<br />GitHub</p>
       </div>
       <div class='card'>
+        <h3>Testing Tools</h3>
+        <hr />
+        <p>Jest<br />Chai<br />Mocha<br />Enzyme<br />Sinon</p>
+      </div>
+      <div class='card'>
         <h3>Understanding of</h3>
         <hr />
-        <p> ES6<br />web development process <br/>(design, develop, test & deploy, analyze & maintain)<br /> Responsive design<br /> Cross browser compatiblity<br /> basic SEO design principles and Acessibility<br />command line</p>
+        <p> ES6<br />RESTful API <br />Comand Line <br /> Responsive design<br /> Cross browser compatiblity<br />SEO design principles, acessibility<br /> and web development process <br/>(design, develop, test & deploy, analyze & maintain)</p>
       </div>
       <div class='card'>
         <h3>Tools</h3>
         <hr />
-        <p>Adobe Illustrator and Photoshop<br /> Atom<br /> working with Browser developer tools for debugging<br />Network Throttling with developer tools for better performance<br /> Page Speed Insights by Lighthouse to analyze web performance</p>
+        <p>Atom<br />Adobe Illustrator and Photoshop<br />  working with Browser developer tools for debugging<br />Network Throttling with developer tools for better performance<br /> Page Speed Insights by Lighthouse to analyze web performance</p>
       </div>
       <div class='card'>
         <h3>More</h3>
         <hr />
-        <p>Java<br /> SQL <br />PostgreSQL <br /> JDBC API<br />FontAwesome<br /> Devicon</p>
+        <p>Heroku<br />MongoDB<br />Mongoose<br />Java<br />PostgreSQL <br /> JDBC API<br />FontAwesome</p>
       </div>
       </div>
     )

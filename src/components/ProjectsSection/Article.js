@@ -53,7 +53,7 @@ class Article extends React.Component{
 
   //on next button click
   handleNext(){
-    if(this.state.index <=7 ){ // if not last project
+    if(this.state.index <=8 ){ // if not last project
        this.animateChange();
          this.setState({
            index: this.state.index + 1
@@ -95,7 +95,7 @@ class Article extends React.Component{
       $('.fa-arrow-circle-left').css('opacity', '0.1');
       $('.fa-arrow-circle-right').css('opacity', '1');
     }
-    else if(this.state.index > 7){
+    else if(this.state.index > 8){
        $('.fa-arrow-circle-left').css('opacity', '1');
        $('.fa-arrow-circle-right').css('opacity', '0.1');
     }else{
