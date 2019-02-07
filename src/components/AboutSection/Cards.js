@@ -48,17 +48,17 @@ class Cards extends React.Component {
       <div class='card'>
         <h3>Understanding of</h3>
         <hr />
-        <p> ES6<br />RESTful API <br />Comand Line <br /> Responsive design<br /> Cross browser compatiblity<br />SEO design principles, acessibility<br /> and web development process <br/>(design, develop, test & deploy, analyze & maintain)</p>
+        <p> ES6<br />RESTful API <br />Comand Line <br /> Responsive design<br /> Cross browser compatiblity<br />Unit and Integration Testing<br />SEO design principles and acessibility</p>
       </div>
       <div class='card'>
         <h3>Tools</h3>
         <hr />
-        <p>Atom<br />Adobe Illustrator and Photoshop<br />  working with Browser developer tools for debugging<br />Network Throttling with developer tools for better performance<br /> Page Speed Insights by Lighthouse to analyze web performance</p>
+        <p>Atom<br />Heroku<br />Amazon Web Services (AWS)<br />Adobe Illustrator and Photoshop<br />Browser developer tools for debugging<br />Network Throttling with developer tools for better performance<br /> Page Speed Insights by Lighthouse to analyze web performance</p>
       </div>
       <div class='card'>
         <h3>More</h3>
         <hr />
-        <p>Heroku<br />MongoDB<br />Mongoose<br />Java<br />PostgreSQL <br /> JDBC API<br />FontAwesome</p>
+        <p>MongoDB<br />Mongoose<br />Java<br />PostgreSQL <br /> JDBC API<br />FontAwesome</p>
       </div>
       </div>
     )

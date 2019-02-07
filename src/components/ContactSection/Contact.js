@@ -31,7 +31,7 @@ class Contact extends React.Component{
            <img id ='background' src='' alt='sea background'/>
          </figure>
       </div>
-        <p>View <a href='https://github.com/1XWebbyX1/react-portfolio' target="_blank" rel="noopener noreferrer">code</a> for this project.<br/>Copyright 2018 Khayati Asrani, All Rights Reserved</p>
+        <p>Copyright 2018 Khayati Asrani, All Rights Reserved</p>
       </section>
     )
   }
