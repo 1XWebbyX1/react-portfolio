@@ -30,6 +30,7 @@
     box-shadow: 1500px 0px 0px inset #050505;
     text-align: center !important;
     text-shadow: none;
+    user-select: none;
      @include media($phone){
       font-size: 2.8em;
     }
@@ -46,6 +47,7 @@
     color:#050505;
     text-align: center;
     text-transform: uppercase;
+    user-select: none;
     box-shadow: 0px -400px 0px inset #050505;
     @include media($tab){
       top: 67%
