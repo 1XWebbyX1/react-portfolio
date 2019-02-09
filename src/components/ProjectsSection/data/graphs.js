@@ -13,9 +13,10 @@ var graphs = [
   [{color: 'white', name: 'jQuery', width: '80px'},
   {color: '#330066', name: 'Sass', width: '200px'}],
 
-  [{color: '#e68a00', name: 'React', width: '60px'},
-  {color: 'white', name: 'jQuery', width: '100px'},
-  {color: '#330066', name: 'Sass', width: '150px'}],
+  [{color: '#e68a00', name: 'React', width: '360px'},
+  {color: '#e68a00', name: 'Redux', width: '160px'},
+  {color: '#e68a00', name: 'Express', width: '160px'},
+  {color: '#e68a00', name: 'Sass', width: '160px'}],
 
   [{color: '#e68a00', name: 'React', width: '200px'},
   {color: 'white', name: 'jQuery', width: '30px'},
