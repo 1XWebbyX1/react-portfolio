@@ -1,8 +1,8 @@
 
  var fallback = [
    './data/images/markdown.png',
+   './data/images/quote.png',
   './data/images/pomodoro.png',
-  './data/images/quote.png',
   './data/images/shortener.png',
   './data/images/landing_page.png',
   './data/images/drums.png',
