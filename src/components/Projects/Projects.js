@@ -1,5 +1,5 @@
 import React from 'react'
-import Article from './Article'
+import Article from './Article/Article.js'
 
 class Projects extends React.Component{
   render(){

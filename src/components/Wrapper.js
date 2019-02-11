@@ -1,18 +1,18 @@
 import React from 'react'
 import asyncComponent from './asyncComponent/async'
 
-import Home from './HomeSection/Home'
+import Home from './Home/Home.js'
 
 const Projects = asyncComponent(() =>
-     import('./ProjectsSection/Projects').then(module => module.default)
+     import('./Projects/Projects.js').then(module => module.default)
 	);
 
   const About = asyncComponent(() =>
-       import('./AboutSection/About').then(module => module.default)
+       import('./About/About.js').then(module => module.default)
   	);
 
   const Contact = asyncComponent(() =>
-         import('./ContactSection/Contact').then(module => module.default)
+         import('./Contact/Contact.js').then(module => module.default)
   	);
 
 class Wrapper extends React.Component{

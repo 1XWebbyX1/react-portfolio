@@ -54,37 +54,42 @@
     }
   }
 
-  >button{
-       @include position(absolute, 60%, 0%);
-        cursor: pointer;
-        scale: 1;
-        width: 220px;
-        height: auto;
-        margin: 2%;
-        padding: 2px 7px;
-        font-size: calc(0.6em + 0.7vw);
-        font-weight: 400;
-        color: #444;
-        opacity: 0;
+  a{
+    text-decoration: none;
+    button{
+         @include position(absolute, 60%, 0%);
+          cursor: pointer;
+          scale: 1;
+          width: 220px;
+          height: auto;
+          margin: 2%;
+          padding: 2px 7px;
+          font-size: calc(0.6em + 0.7vw);
+          font-weight: 400;
+          color: #444;
+          opacity: 0;
+          border: none;
+          border-radius: 5px;
+          background: #111;
+          text-align: center;
+          letter-spacing: 0.1px;
+          text-transform: uppercase;
+          transition: all 150ms;
+         @include media($phone-tab){
+            top: 3%;
+            width: 100px;
+            background: none;
+            color: white;
+      }
+      &:hover{
+        background: white;
+        color: #0a0a0a;
         border: none;
-        border-radius: 5px;
-        background: #111;
-        text-align: center;
-        letter-spacing: 0.1px;
-        text-transform: uppercase;
-        transition: all 150ms;
-       @include media($phone-tab){
-          top: 3%;
-          width: 100px;
-          background: none;
-          color: white;
-    }
-    &:hover{
-      background: white;
-      color: #0a0a0a;
-      border: none;
+      }
     }
   }
+
+
 
   #project-btn{
     left: 10%;

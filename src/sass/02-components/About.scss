@@ -112,6 +112,14 @@
   }
  }
 
+ .hidden{
+   display: none;
+ }
+
+ .visible{
+   display: block;
+ }
+
   .information{
     height: auto;
     display: flex;
@@ -137,13 +145,6 @@
         @include media($phone-tab){
           //display: none;
        }
-        #about-svg{
-          display: block;
-        }
-
-        #skills-svg{
-          display: none;
-        }
       }
 
       .line{
@@ -183,7 +184,6 @@
         padding: 2%;
 
         #intro{
-          display: block;
           p{
             font-size: $md;
             color: #d3d3d3;
@@ -191,8 +191,6 @@
         }
 
         #skills{
-          display: none;
-
           .row{
             display: flex;
             flex-wrap: wrap;

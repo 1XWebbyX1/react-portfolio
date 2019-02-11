@@ -1,23 +1,28 @@
 import React from 'react'
-//import asyncComponent from '../asyncComponent/async';
 import { faCodepen, faGithub} from '@fortawesome/free-brands-svg-icons'
 import { faEnvelope} from '@fortawesome/free-regular-svg-icons'
-import Card from './Card'
+import Card from './Card/Card.js'
 
 
 class Contact extends React.Component{
+  constructor(props){
+    super(props);
+    this.state = {
+      image: ''
+    };
+  }
 
-  componentDidMount(){
-     import('./background.jpg')
+  componentWillMount(){
+     import('./image/background.jpg')
      .then(src => {
-       document.getElementById("background").src= src.default;
+       this.setState({image: src.default});
      })
    }
 
   render(){
     return(
       <section id='contact'>
-        <h3 class='anim'>Get in Touch</h3>
+        <h3 class='anim'>GET IN TOUCH</h3>
         <h1 class='anim'>Contact</h1>
 
         <div class='wrapper anim'>
@@ -28,10 +33,10 @@ class Contact extends React.Component{
 
         <div class='snap-wrap'>
          <figure id='snap'>
-           <img id ='background' src='' alt='sea background'/>
+           <img id ='background' src={this.state.image} alt='sea background'/>
          </figure>
       </div>
-        <p>Copyright 2018 Khayati Asrani, All Rights Reserved</p>
+        <p>Copyright 2018 Khayati Asrani | All Rights Reserved</p>
       </section>
     )
   }

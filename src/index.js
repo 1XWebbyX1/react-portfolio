@@ -12,6 +12,7 @@ ReactDOM.render(<App />, document.getElementById('root'));
 
 
  $(document).ready(function(){
+   alert("Now visit this site at https://khayatiasrani.com/ :)");
   setTimeout(function(){
     import('./animation_modules/canvas')
    .then(module => {

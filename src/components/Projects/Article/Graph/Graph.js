@@ -1,6 +1,5 @@
 import React from 'react'
-//import asyncComponent from '../asyncComponent/async'
-import Bar from './Bar'
+import Bar from './Bar/Bar.js'
 
 class Graph extends React.Component{
   render(){
@@ -9,10 +8,10 @@ class Graph extends React.Component{
     var bars = arr.map((a) => {
       var id = 'bar-' + i;
       i++;
-      return <Bar id={id} name={a.name} src={this.props.src}/>
+      return <Bar id={id} name={a.name} width={a.width}/>
     })
     return(
-      <div class='graph'>
+      <div className='graph'>
         {bars}
        </div>
     )
