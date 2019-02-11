@@ -125,6 +125,9 @@
     }
 
 
+
+
+
   .inner{
     @include position(relative, 0, 0);
     border-radius: 0%;
@@ -144,10 +147,10 @@
         height: auto;
         margin: 0 auto;
       }
+
     img{
         border-radius: 5px;
         border: none;
-        filter: blur(45px);
         width: 100%;
         height: 100%;
         box-shadow: none;

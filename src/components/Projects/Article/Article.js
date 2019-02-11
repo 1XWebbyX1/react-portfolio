@@ -23,7 +23,7 @@ class Article extends React.Component{
       github: function() {return projects[this.index].github},
       image: markdown,
       leftOpacity: 'transparent',
-      rightOpacity: 'opaque'
+      rightOpacity: 'opaque',
     }
      this.handleNext = this.handleNext.bind(this);
      this.handlePrev = this.handlePrev.bind(this);
@@ -50,6 +50,8 @@ class Article extends React.Component{
 
   //on next button click
   handleNext(){
+    var tl = new TimelineMax();
+     tl.to('#project', 0.1 ,{filter: 'blur(45px)'});
     if(this.state.index <=8 ){ // if not last project
        this.animateChange();
          this.setState({
@@ -76,10 +78,13 @@ class Article extends React.Component{
    console.log('loaded');
    var tl = new TimelineMax();
     tl.fromTo('#project', 0.4 ,{filter: 'blur(45px)'}, {filter: 'blur(0px)'});
+    this.setState({blur: ''});
  }
 
   //on prev button click
   handlePrev(){
+     var tl = new TimelineMax();
+     tl.to('#project', 0.1 ,{filter: 'blur(45px)'});
       if(this.state.index >= 1){ //if not first project
           this.animateChange();
          this.setState({
