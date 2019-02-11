@@ -8,12 +8,12 @@ self.__precacheManifest = [
     "url": "/react-portfolio/static/js/1.6c17bc21.chunk.js"
   },
   {
-    "revision": "4e216416c7fe91e5356c",
-    "url": "/react-portfolio/static/css/main.63fbeef9.chunk.css"
+    "revision": "fa927658519325d39408",
+    "url": "/react-portfolio/static/css/main.6ddae7ad.chunk.css"
   },
   {
-    "revision": "4e216416c7fe91e5356c",
-    "url": "/react-portfolio/static/js/main.4e216416.chunk.js"
+    "revision": "fa927658519325d39408",
+    "url": "/react-portfolio/static/js/main.fa927658.chunk.js"
   },
   {
     "revision": "65fa7f7eabe6fe4c235d",
@@ -32,8 +32,8 @@ self.__precacheManifest = [
     "url": "/react-portfolio/static/js/6.44900006.chunk.js"
   },
   {
-    "revision": "9577539f8d4f4fbdfed9",
-    "url": "/react-portfolio/static/js/7.9577539f.chunk.js"
+    "revision": "36f6dceadf2e5c6d24b2",
+    "url": "/react-portfolio/static/js/7.36f6dcea.chunk.js"
   },
   {
     "revision": "090216efcf934c491ffe",
@@ -100,8 +100,8 @@ self.__precacheManifest = [
     "url": "/react-portfolio/static/js/23.fd4c8552.chunk.js"
   },
   {
-    "revision": "11fed59d885dcb6e602e",
-    "url": "/react-portfolio/static/js/runtime~main.11fed59d.js"
+    "revision": "b024f5100e2a092d8cb5",
+    "url": "/react-portfolio/static/js/runtime~main.b024f510.js"
   },
   {
     "revision": "f5a89c0330051a418ac3c0fbc5105786",
@@ -148,7 +148,7 @@ self.__precacheManifest = [
     "url": "/react-portfolio/static/media/SkillsSvg.bc483a08.svg"
   },
   {
-    "revision": "1354283d43381498beb2ad36d2e9f64e",
+    "revision": "e72910b07ad3cd1cf37e38fdca990510",
     "url": "/react-portfolio/index.html"
   }
 ];
