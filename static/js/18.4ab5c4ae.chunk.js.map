@@ -1,0 +1,1 @@
+{"version":3,"sources":["components/Projects/Article/data/images/tribute.png"],"names":["module","exports","__webpack_require__","p"],"mappings":"8EAAAA,EAAAC,QAAiBC,EAAAC,EAAuB","file":"static/js/18.4ab5c4ae.chunk.js","sourcesContent":["module.exports = __webpack_public_path__ + \"static/media/tribute.19453811.png\";"],"sourceRoot":""}

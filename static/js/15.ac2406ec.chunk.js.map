@@ -1,0 +1,1 @@
+{"version":3,"sources":["components/Projects/Article/data/images/quote.png"],"names":["module","exports","__webpack_require__","p"],"mappings":"8EAAAA,EAAAC,QAAiBC,EAAAC,EAAuB","file":"static/js/15.ac2406ec.chunk.js","sourcesContent":["module.exports = __webpack_public_path__ + \"static/media/quote.82eeb9fd.png\";"],"sourceRoot":""}
